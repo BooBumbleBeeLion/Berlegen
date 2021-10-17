@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Alphabet.letter">
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/f16"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/message_input"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#43A30C"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:text="Алфавит"
+        android:paddingLeft="60dp"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+    <ImageView
+        android:id="@+id/Button_back"
+        android:layout_width="34dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#0000"
+        android:onClick="goBack"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/arrow" />
+
+
+    <RelativeLayout
+        android:id="@+id/vid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/message_input">
+
+
+        <ImageView
+            android:id="@+id/letterCard"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="125dp"
+            android:background="@drawable/stroke2" />
+
+        <ImageView
+            android:id="@+id/imageWord"
+            android:layout_width="250dp"
+            android:layout_height="130dp"
+            android:layout_alignStart="@id/letterCard"
+            android:layout_alignTop="@id/letterCard"
+            android:layout_alignEnd="@id/letterCard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginEnd="45dp"
+            app:srcCompat="@android:color/holo_orange_dark" />
+
+        <TextView
+            android:id="@+id/bashWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageWord"
+            android:layout_alignStart="@id/imageWord"
+            android:layout_alignEnd="@id/imageWord"
+            android:layout_marginTop="15dp"
+            android:padding="2dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bashWord"
+            android:layout_alignStart="@id/imageWord"
+            android:layout_alignEnd="@id/imageWord"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/wordofletter"
+            android:padding="2dp"
+            android:text="word"
+            android:textAlignment="center"
+            android:textColor="#ffffff" />
+
+
+        <Button
+            android:id="@+id/letterImage"
+            android:layout_width="143dp"
+            android:layout_height="131dp"
+            android:layout_alignStart="@id/letterCard"
+            android:layout_alignTop="@id/letterCard"
+            android:layout_alignEnd="@id/letterCard"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="-97dp"
+            android:layout_marginEnd="101dp"
+            android:background="@drawable/stroke2"
+            android:textAppearance="@style/letter"
+            android:textSize="70sp" />
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/word"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:onClick="playMp3"
+            app:srcCompat="@drawable/zvuk"/>
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="83dp"
+            android:background="@drawable/firstpagebutton"
+            android:onClick="goBack"
+            android:text="Понятно" />
+    </RelativeLayout>
+
+</RelativeLayout>

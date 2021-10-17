@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/backgroundcrop" />
+
+    <TextView
+        android:id="@+id/glav"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#43A30C"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:text="Изучаем башкирский язык"
+        android:paddingStart="15dp"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="664dp"
+        android:layout_below="@+id/glav"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="13dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/Alphabet"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/nameofbutton"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="Алфавит"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="146dp"
+                android:onClick="OpenActivity1"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                app:srcCompat="@drawable/newbutton1" />
+
+
+            <TextView
+                android:id="@+id/course"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/nameofbutton"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="Курсы"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="146dp"
+                android:onClick="OpenActivity2"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                app:srcCompat="@drawable/newbutton2" />
+
+
+
+            <TextView
+                android:id="@+id/game"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/nameofbutton"
+                android:text="   Игровая зона"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="146dp"
+                android:onClick="OpenActivity4"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                app:srcCompat="@drawable/newbutton3" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

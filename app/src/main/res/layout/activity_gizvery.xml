@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fa2255"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fon_4" />
+
+    <ImageView
+        android:id="@+id/dog"
+        android:layout_width="188dp"
+        android:layout_height="206dp"
+        android:layout_below="@+id/message_input"
+        android:layout_alignBottom="@+id/icon"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="468dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="2dp"
+        android:background="#0000"
+        android:src="@drawable/zveri1" />
+
+    <ImageView
+        android:id="@+id/cat"
+        android:layout_width="132dp"
+        android:layout_height="122dp"
+        android:layout_below="@+id/message_input"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="331dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="224dp"
+        android:background="#0000"
+        android:src="@drawable/zveri2" />
+
+    <ImageView
+        android:id="@+id/parrot"
+        android:layout_width="87dp"
+        android:layout_height="107dp"
+        android:layout_below="@+id/message_input"
+        android:layout_alignBottom="@+id/icon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="151dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="419dp"
+        android:background="#0000"
+        android:src="@drawable/zveri3" />
+
+    <ImageView
+        android:id="@+id/hamster"
+        android:layout_width="95dp"
+        android:layout_height="117dp"
+        android:layout_alignTop="@+id/message_input"
+        android:layout_alignBottom="@+id/icon"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="532dp"
+        android:layout_marginBottom="82dp"
+        android:background="#0000"
+        android:src="@drawable/zveri4" />
+
+    <TextView
+        android:id="@+id/message_input"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#43A30C"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:text="Найди картинки"
+        android:paddingLeft="60dp"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:background="#0000"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/arrow" />
+
+</RelativeLayout>

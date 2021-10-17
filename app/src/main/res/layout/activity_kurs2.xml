@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="642dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="-2dp"
+        android:background="#fa2255"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background1" />
+
+    <View
+        android:id="@+id/View"
+        android:layout_width="wrap_content"
+        android:layout_height="257dp"
+        android:layout_below="@+id/message_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/stroke2"
+        android:paddingStart="@dimen/padding_small2" />
+
+    <TextView
+        android:id="@+id/textru"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@+id/View3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/wordofletter"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textbash"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/View3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="23dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/View3"
+        android:layout_width="194dp"
+        android:layout_height="162dp"
+        android:layout_below="@+id/message_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/stroke2"
+        android:paddingStart="@dimen/padding_small2" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="167dp"
+        android:layout_height="129dp"
+        android:layout_alignStart="@+id/View3"
+        android:layout_alignTop="@+id/View3"
+        android:layout_alignEnd="@+id/View3"
+        android:layout_alignBottom="@+id/View3"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="13dp"/>
+
+    <Button
+        android:id="@+id/Button_next"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/icon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/kek"
+        android:onClick="next"
+        android:text="Следующее" />
+
+    <ImageButton
+        android:id="@+id/zvuk"
+        android:layout_width="99dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/View"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="129dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="11dp"
+        android:background="#0000"
+        android:onClick="playMp3"
+        android:scaleType="centerInside"
+        android:src="@drawable/zvuk" />
+
+    <TextView
+        android:id="@+id/message_input"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#43A30C"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="60dp"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+    <ImageButton
+        android:id="@+id/Button_back"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:background="#0000"
+        android:onClick="goBack"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/arrow" />
+
+</RelativeLayout>

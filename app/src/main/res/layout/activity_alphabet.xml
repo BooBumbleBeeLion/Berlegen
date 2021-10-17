@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Alphabet.Alphabet">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/background1"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/message_input"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#43A30C"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:text="Алфавит"
+            android:paddingLeft="60dp"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/l1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Aa"
+                        android:textAppearance="@style/letter" />
+
+                    <Button
+                        android:id="@+id/l2"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Бб"
+                        android:textAppearance="@style/letter" />
+
+                    <Button
+                        android:id="@+id/l3"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Вв"
+                        android:textAppearance="@style/letter" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/l4"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Гг"
+                        android:textAppearance="@style/letter" />
+
+                    <Button
+                        android:id="@+id/l5"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Ғғ"
+                        android:textAppearance="@style/letter" />
+
+                    <Button
+                        android:id="@+id/l6"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Дд"
+                        android:textAppearance="@style/letter" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/l7"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Ҙҙ"
+                        android:textAppearance="@style/letter" />
+
+                    <Button
+                        android:id="@+id/l8"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Ее"
+                        android:textAppearance="@style/letter" />
+
+                    <Button
+                        android:id="@+id/l9"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Ёё"
+                        android:textAppearance="@style/letter" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/l10"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:textSize="35sp"
+                        android:text="Жж"
+                        android:textAppearance="@style/letter" />
+
+                    <Button
+                        android:id="@+id/l11"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Зз"
+                        android:textAppearance="@style/letter" />
+
+                    <Button
+                        android:id="@+id/l12"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Ии"
+                        android:textAppearance="@style/letter" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/l13"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Йй"
+                        android:textAppearance="@style/letter" />
+
+                    <Button
+                        android:id="@+id/l14"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Кк"
+                        android:textAppearance="@style/letter" />
+
+                    <Button
+                        android:id="@+id/l15"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Ҡҡ"
+                        android:textAppearance="@style/letter"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/l16"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Лл"
+                        android:textAppearance="@style/letter" />
+
+                    <Button
+                        android:id="@+id/l17"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:textSize="40sp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Мм"
+                        android:textAppearance="@style/letter"/>
+
+                    <Button
+                        android:id="@+id/l18"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Нн"
+                        android:textAppearance="@style/letter" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/l19"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Ңң"
+                        android:textAppearance="@style/letter"/>
+
+                    <Button
+                        android:id="@+id/l20"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Оо"
+                        android:textAppearance="@style/letter" />
+
+                    <Button
+                        android:id="@+id/l21"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/stroke"
+                        android:textAppearance="@style/letter"
+                        android:onClick="openLetter"
+                        android:text="Өө"
+                         />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/l22"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Пп"
+                        android:textAppearance="@style/letter"/>
+
+                    <Button
+                        android:id="@+id/l23"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Рр"
+                        android:textAppearance="@style/letter"/>
+
+                    <Button
+                        android:id="@+id/l24"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Сс"
+                        android:textAppearance="@style/letter"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/l25"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Ҫҫ"
+                        android:textAppearance="@style/letter"/>
+
+                    <Button
+                        android:id="@+id/l26"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Тт"
+                        android:textAppearance="@style/letter"/>
+
+                    <Button
+                        android:id="@+id/l27"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Уу"
+                        android:textAppearance="@style/letter"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/l28"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Үү"
+                        android:textAppearance="@style/letter"/>
+
+                    <Button
+                        android:id="@+id/l29"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Фф"
+                        android:textAppearance="@style/letter"/>
+
+                    <Button
+                        android:id="@+id/l30"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Хх"
+                        android:textAppearance="@style/letter"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/l31"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Һһ"
+                        android:textAppearance="@style/letter"/>
+
+                    <Button
+                        android:id="@+id/l32"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Цц"
+                        android:textAppearance="@style/letter"/>
+
+                    <Button
+                        android:id="@+id/l33"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Чч"
+                        android:textAppearance="@style/letter"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/l34"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:textSize="40sp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Шш"
+                        android:textAppearance="@style/letter"/>
+
+                    <Button
+                        android:id="@+id/l35"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:textSize="35sp"
+                        android:text="Щщ"
+                        android:textAppearance="@style/letter"/>
+
+                    <Button
+                        android:id="@+id/l36"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Ъъ"
+                        android:textAppearance="@style/letter"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/l37"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:textSize="40sp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Ыы"
+                        android:textAppearance="@style/letter"/>
+
+                    <Button
+                        android:id="@+id/l38"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Ьь"
+                        android:textAppearance="@style/letter"/>
+
+                    <Button
+                        android:id="@+id/l39"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Ээ"
+                        android:textAppearance="@style/letter"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/l40"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Әә"
+                        android:textAppearance="@style/letter"/>
+
+                    <Button
+                        android:id="@+id/l41"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="40dp"
+                        android:textSize="40sp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Юю"
+                        android:textAppearance="@style/letter"/>
+
+                    <Button
+                        android:id="@+id/l42"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/stroke"
+                        android:onClick="openLetter"
+                        android:text="Яя"
+                        android:textAppearance="@style/letter"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="34dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#0000"
+        android:onClick="goBack"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/arrow" />
+
+
+</RelativeLayout>

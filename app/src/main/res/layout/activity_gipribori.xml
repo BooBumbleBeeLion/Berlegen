@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="-2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fon3" />
+
+    <ImageView
+        android:id="@+id/fork"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginBottom="395dp"
+        android:background="#0000"
+        android:src="@drawable/pribori1" />
+
+    <ImageView
+        android:id="@+id/spoon"
+        android:layout_width="113dp"
+        android:layout_height="145dp"
+        android:layout_below="@+id/message_input"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="251dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginBottom="535dp"
+        android:background="#0000"
+        android:src="@drawable/pribori2" />
+
+    <ImageView
+        android:id="@+id/plate"
+        android:layout_width="106dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="373dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="280dp"
+        android:background="#0000"
+        android:src="@drawable/pribori3" />
+
+    <ImageView
+        android:id="@+id/cup"
+        android:layout_width="86dp"
+        android:layout_height="84dp"
+        android:layout_alignEnd="@+id/pot"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="330dp"
+        android:src="@drawable/probori4" />
+
+    <ImageView
+        android:id="@+id/knife"
+        android:layout_width="69dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/message_input"
+        android:layout_alignBottom="@+id/icon"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginBottom="442dp"
+        android:background="#0000"
+        android:src="@drawable/pribori5" />
+
+    <ImageView
+        android:id="@+id/pot"
+        android:layout_width="74dp"
+        android:layout_height="73dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="311dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="350dp"
+        android:src="@drawable/pribori6" />
+
+    <ImageView
+        android:id="@+id/skillet"
+        android:layout_width="80dp"
+        android:layout_height="49dp"
+        android:layout_below="@+id/message_input"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-22dp"
+        android:layout_marginTop="352dp"
+        android:layout_marginBottom="273dp"
+        android:background="#0000"
+        android:src="@drawable/pribori7" />
+
+    <TextView
+        android:id="@+id/message_input"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#43A30C"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="60dp"
+        android:text="Найди картинки"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:background="#0000"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/arrow" />
+
+</RelativeLayout>

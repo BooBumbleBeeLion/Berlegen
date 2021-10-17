@@ -1,0 +1,208 @@
+<resources>
+    <string name="app_name">Berlegen</string>
+
+    <string name="slovo1">ЗДРАВСТВУЙТЕ</string>
+    <string name="slovo2">ПРИВЕТ</string>
+    <string name="slovo3">КАК ВАС ЗОВУТ?</string>
+    <string name="slovo4">МЕНЯ ЗОВУТ АЙРАТ</string>
+    <string name="slovo5">КАК У ВАС ДЕЛА?</string>
+    <string name="slovo6">ХОРОШО</string>
+    <string name="slovo7">КАК ДОЕХАТЬ ДО ОСТАНОВКИ ЦЕНТРАЛЬНЫЙ РЫНОК?</string>
+    <string name="slovo8">ДО ОСТАНОВКИ ЦЕНТРАЛЬНЫЙ РЫНОК МОЖНО ДОЕХАТЬ НА МАРШРУТНОМ АВТОБУСЕ НОМЕР 249</string>
+    <string name="slovo9">ОЧЕНЬ РАД(А) С ВАМИ\nПОЗНАКОМИТЬСЯ</string>
+    <string name="slovo10">ДО СВИДАНИЯ</string>
+    <string name="bach1">ҺАУМЫҺЫҒЫҘ</string>
+    <string name="bach2">СӘЛӘМ</string>
+    <string name="bach3">ҺЕҘҘЕҢ ИСЕМЕГЕҘ НИСЕК?</string>
+    <string name="bach4">МИНЕҢ ИСЕМЕМ – АЙРАТ</string>
+    <string name="bach5">ХӘЛДӘРЕГЕҘ НИСЕК?</string>
+    <string name="bach6">ЯҠШЫ</string>
+    <string name="bach7">ҮҘӘК БАҘАР ТУҠТАЛЫШЫНДА ТИКЛЕМ НИСЕК БАРЫРҒА?</string>
+    <string name="bach8">МИН ӨФӨ СТАТИСТИКА,\nИНФОРМАТИКА ҺӘМ ИҪӘПЛӘҮ ТЕХНИКАҺЫ\nКОЛЛЕДЖЫНДА УҠЫЙЫМ</string>
+    <string name="bach9">ҺЕҘҘЕҢ МЕНӘН ТАНЫШЫУҒА ШАТМЫН</string>
+    <string name="bach10">ҺАУ БУЛЫҒЫҘ</string>
+
+    <string name="letterword1">ЯБЛОКО</string>
+    <string name="letterword2">РЕБЕНОК</string>
+    <string name="letterword3">ПРЕДСТАВИТЕЛЬ</string>
+    <string name="letterword4">ЦВЕТЫ, ЦВЕТОК</string>
+    <string name="letterword5">УЧЕНЫЙ</string>
+    <string name="letterword6">ТЕТРАДЬ</string>
+    <string name="letterword7">БОЛЬШОЙ</string>
+    <string name="letterword8">ЯГОДА</string>
+    <string name="letterword9">ЕЛКА</string>
+    <string name="letterword10">ЖИЛЕТ</string>
+    <string name="letterword11">ГОЛУБОЙ</string>
+    <string name="letterword12">ХЛЕБ</string>
+    <string name="letterword13">ГРУЗ</string>
+    <string name="letterword14">КНИГА</string>
+    <string name="letterword15">БЕРЕЗА</string>
+    <string name="letterword16">ИЛ, ИЛИСТОЕ МЕСТО</string>
+    <string name="letterword17">ШКОЛА</string>
+    <string name="letterword18">ОСНОВА, ФУНДАМЕНТ</string>
+    <string name="letterword19">НОРА</string>
+    <string name="letterword20">ДЕДУШКА</string>
+    <string name="letterword21">ДОМ</string>
+    <string name="letterword22">ЗАНАВЕС</string>
+    <string name="letterword23">РИСУНОК</string>
+    <string name="letterword24">ЧАСЫ</string>
+    <string name="letterword25">ОСИНА</string>
+    <string name="letterword26">ОКНО</string>
+    <string name="letterword27">СТУЛ</string>
+    <string name="letterword28">ТРАВА</string>
+    <string name="letterword29">СЛОН</string>
+    <string name="letterword30">ЖИВОТНОЕ</string>
+    <string name="letterword31">КОРОВА</string>
+    <string name="letterword32">ЦИРКУЛЬ</string>
+    <string name="letterword33">ЧЕК ИЛИ ЧЕМПИОН</string>
+    <string name="letterword34">НАЛИМ</string>
+    <string name="letterword35">ЩУКА</string>
+    <string name="letterword36">ФАРТУК</string>
+    <string name="letterword37">ПОДВОДА, ОБОЗ</string>
+    <string name="letterword38">ЕЛЬ</string>
+    <string name="letterword39">СОБАКА</string>
+    <string name="letterword40">МАМА</string>
+    <string name="letterword41">ДОРОГА</string>
+    <string name="letterword42">ДОЖДЬ</string>
+
+    <string name="letterwordbash1">АЛМА</string>
+    <string name="letterwordbash2">БАЛА</string>
+    <string name="letterwordbash3">ВӘКИЛ</string>
+    <string name="letterwordbash4">ГӨЛ</string>
+    <string name="letterwordbash5">ҒАЛИМ</string>
+    <string name="letterwordbash6">ДӘФТӘР</string>
+    <string name="letterwordbash7">ҘУР</string>
+    <string name="letterwordbash8">ЕЛӘК</string>
+    <string name="letterwordbash9">ЕЛКА</string>
+    <string name="letterwordbash10">ЖИЛЕТ</string>
+    <string name="letterwordbash11">ЗӘҢГӘР</string>
+    <string name="letterwordbash12">ИКМӘК</string>
+    <string name="letterwordbash13">ЙӨК</string>
+    <string name="letterwordbash14">КИТАП</string>
+    <string name="letterwordbash15">ҠАЙЫН</string>
+    <string name="letterwordbash16">ЛӘМ</string>
+    <string name="letterwordbash17">МӘКТӘП</string>
+    <string name="letterwordbash18">НИГЕҘ</string>
+    <string name="letterwordbash19">ӨҢ</string>
+    <string name="letterwordbash20">ОЛАТАЙ</string>
+    <string name="letterwordbash21">ӨЙ</string>
+    <string name="letterwordbash22">ПӘРҘӘ</string>
+    <string name="letterwordbash23">РӘСЕМ</string>
+    <string name="letterwordbash24">СӘҒӘТ</string>
+    <string name="letterwordbash25">УҪАҠ</string>
+    <string name="letterwordbash26">ТӘҘРӘ</string>
+    <string name="letterwordbash27">УЛТЫРҒЫС</string>
+    <string name="letterwordbash28">ҮЛӘН</string>
+    <string name="letterwordbash29">ФИЛ</string>
+    <string name="letterwordbash30">ХАЙУАН</string>
+    <string name="letterwordbash31">ҺЫЙЫР</string>
+    <string name="letterwordbash32">ЦИРКУЛЬ</string>
+    <string name="letterwordbash33">ЧЕК</string>
+    <string name="letterwordbash34">ШАМБЫ</string>
+    <string name="letterwordbash35">ЩУКА</string>
+    <string name="letterwordbash36">АЛЪЯПҠЫС</string>
+    <string name="letterwordbash37">ЫЛАУ</string>
+    <string name="letterwordbash38">ШЫРШЫ</string>
+    <string name="letterwordbash39">ЭТ</string>
+    <string name="letterwordbash40">ӘСӘЙ</string>
+    <string name="letterwordbash41">ЮЛ</string>
+    <string name="letterwordbash42">ЯМҒЫР</string>
+
+    <string-array name="ruNumber">
+        <item>ОДИН</item>
+        <item>ДВА</item>
+        <item>ТРИ</item>
+        <item>ЧЕТЫРЕ</item>
+        <item>ПЯТЬ</item>
+        <item>ШЕСТЬ</item>
+        <item>СЕМЬ</item>
+        <item>ВОСЕМЬ</item>
+        <item>ДЕВЯТЬ</item>
+        <item>ДЕСЯТЬ</item>
+    </string-array>
+    <string-array name="bachNumber">
+        <item>БЕР</item>
+        <item>ИКЕ</item>
+        <item>ӨС</item>
+        <item>ДҮРТ</item>
+        <item>БИШ</item>
+        <item>АЛТЫ</item>
+        <item>ЕТЕ</item>
+        <item>ҺИГЕҘ</item>
+        <item>ТУҒЫҘ</item>
+        <item>УН</item>
+    </string-array>
+    <string-array name="ruAnimals">
+        <item>ЛОШАДЬ</item>
+        <item>КОРОВА</item>
+        <item>МЕДВЕДЬ</item>
+        <item>ВОЛК</item>
+        <item>БЕЛКА</item>
+        <item>ЗАЯЦ</item>
+        <item>ЛИСА</item>
+        <item>ЛОСЬ</item>
+        <item>СЛОН</item>
+        <item>ОВЦА</item>
+    </string-array>
+    <string-array name="bachAnimals">
+        <item>АТ</item>
+        <item>ҺЫЙЫР</item>
+        <item>АЙЫУ</item>
+        <item>БҮРЕ</item>
+        <item>ТЕЙЕН</item>
+        <item>ҠУЯН</item>
+        <item>ТӨЛКӨ</item>
+        <item>МЫШЫ</item>
+        <item>ФИЛ</item>
+        <item>ҺАРЫҠ</item>
+    </string-array>
+    <string-array name="ruProfession">
+        <item>УЧИТЕЛЬ</item>
+        <item>ДОЯРКА</item>
+        <item>БИБЛИОТЕКАРЬ</item>
+        <item>ПИСАТЕЛЬ</item>
+        <item>ВРАЧ</item>
+        <item>ХУДОЖНИК</item>
+        <item>ПЕВЕЦ</item>
+        <item>ПРОДАВЕЦ</item>
+        <item>КАМЕНЩИК</item>
+        <item>ВОСПИТАТЕЛЬ</item>
+    </string-array>
+    <string-array name="bachProfession">
+        <item>УҠЫТЫУСЫ</item>
+        <item>ҺАУЫНСЫ</item>
+        <item>КИТАПХАНАСЫ</item>
+        <item>ЯҘЫУСЫ</item>
+        <item>ТАБИП</item>
+        <item>РӘССАМ</item>
+        <item>ЙЫРСЫ</item>
+        <item>ҺАТЫУСЫ</item>
+        <item>ТАШСЫ</item>
+        <item>ТӘРБИӘСЕ</item>
+    </string-array>
+    <string-array name="ruFood">
+        <item>МЕД</item>
+        <item>МОЛОКО</item>
+        <item>КАША</item>
+        <item>ХЛЕБ</item>
+        <item>МЯСО</item>
+        <item>ТВОРОГ</item>
+        <item>СОК</item>
+        <item>БЛИНЫ</item>
+        <item>САХАР</item>
+        <item>ЧАЙ</item>
+    </string-array>
+    <string-array name="bachFood">
+        <item>БАЛ</item>
+        <item>ҺӨТ</item>
+        <item>БУТҠА</item>
+        <item>ИКМӘК</item>
+        <item>ИТ</item>
+        <item>ЭРЕМСЕК</item>
+        <item>ҺУТ</item>
+        <item>ҠОЙМАҠ</item>
+        <item>ШӘКӘР</item>
+        <item>СӘЙ</item>
+    </string-array>
+
+</resources>

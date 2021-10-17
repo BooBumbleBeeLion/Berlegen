@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    >
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="642dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="-1dp"
+        android:background="#fa2255"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background1" />
+
+    <ImageView
+        android:id="@+id/number"
+        android:layout_width="206dp"
+        android:layout_height="170dp"
+        android:layout_below="@+id/message_input"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/p"
+        android:onClick="openkursnum"
+        app:srcCompat="@drawable/number" />
+
+    <ImageView
+        android:id="@+id/animals"
+        android:layout_width="206dp"
+        android:layout_height="170dp"
+        android:layout_below="@+id/message_input"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/p"
+        android:onClick="openkursanim"
+        app:srcCompat="@drawable/animals" />
+
+    <ImageView
+        android:id="@+id/food"
+        android:layout_width="206dp"
+        android:layout_height="170dp"
+        android:layout_below="@+id/number"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/p"
+        android:onClick="openkursfood"
+        app:srcCompat="@drawable/food" />
+
+    <TextView
+        android:id="@+id/p"
+        android:layout_width="wrap_content"
+        android:layout_height="689dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/profession"
+        android:layout_width="206dp"
+        android:layout_height="170dp"
+        android:layout_below="@+id/animals"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/p"
+        android:onClick="openkursprof"
+        app:srcCompat="@drawable/profession" />
+
+    <TextView
+        android:id="@+id/message_input"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#43A30C"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:text="Курс"
+        android:paddingLeft="60dp"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+    <ImageButton
+        android:id="@+id/Button_back"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:background="#0000"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/arrow" />
+
+</RelativeLayout>
