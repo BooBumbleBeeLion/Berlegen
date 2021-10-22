@@ -1,4 +1,4 @@
-package ru.uksivt.berlegen;
+package ru.uksivt.berlegen.Phrase;
 
 
 import android.content.Intent;
@@ -9,22 +9,23 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import ru.uksivt.berlegen.R;
+
 public class phrase extends AppCompatActivity {
-    Intent goback;
     MediaPlayer mediaPlayer = new MediaPlayer();
     int[] sounds;
     int index;
+    boolean playing = true, nowPlay =false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
         setContentView(R.layout.activity_phrase);
+
         Button nobutton = (Button) findViewById(R.id.nobutton) ;
         Button nobutton2 = (Button) findViewById(R.id.nobutton2) ;
         int w =getIntent().getIntExtra("num",0);
         String word = "slovo"+w;
-        //nobutton.setText(word);
+
         int holder = getResources().getIdentifier(word,"string",this.getPackageName());
         nobutton.setText(getResources().getString(holder));
 
@@ -35,29 +36,11 @@ public class phrase extends AppCompatActivity {
         int holderint2 = getResources().getIdentifier("phraseb"+w,"raw",this.getPackageName());
         int holderint = getResources().getIdentifier("phraser"+w,"raw",this.getPackageName());
         sounds = new int[]{holderint, holderint2};
-
-        goback = new Intent(this, phrasebook.class);
-
     }
-    boolean playing = true, nowplay =false;
-    @Override
-    public void onBackPressed(){
-        playing = false;
-        startActivity(goback);
-        mediaPlayer.stop();
-    }
-
-    public void goBack(View view)
+    public void playMp3(View view)
     {
-        playing = false;
-        startActivity(goback);
-        mediaPlayer.stop();
-    }
-
-    public void playmp3(View view)
-    {
-        if(nowplay == false) {
-            nowplay = true;
+        if(!nowPlay) {
+            nowPlay = true;
             index = 0;
             mediaPlayer = MediaPlayer.create(getApplicationContext(), sounds[index]);
             mediaPlayer.setLooping(false);
@@ -72,9 +55,22 @@ public class phrase extends AppCompatActivity {
                     }
                     else {
                         mp.release();
-                        nowplay=false;}
+                        nowPlay =false;}
                 }
             });
         }
+    }
+    @Override
+    public void onBackPressed(){
+        playing = false;
+        startActivity(new Intent(this, phrasebook.class));
+        mediaPlayer.stop();
+    }
+
+    public void goBack(View view)
+    {
+        playing = false;
+        startActivity(new Intent(this, phrasebook.class));
+        mediaPlayer.stop();
     }
 }

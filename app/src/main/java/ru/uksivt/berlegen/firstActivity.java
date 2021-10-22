@@ -14,13 +14,8 @@ public class firstActivity extends AppCompatActivity {
         setContentView(R.layout.activity_first);
     }
 
-
-    public void start(View view)
-    {
+    public void start(View view) {
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
     }
-
-
-
 }

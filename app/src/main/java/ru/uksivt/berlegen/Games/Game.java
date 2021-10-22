@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import ru.uksivt.berlegen.MainActivity;
 import ru.uksivt.berlegen.R;
 
-public class Game extends AppCompatActivity {
+public class Game extends AppCompatActivity implements View.OnClickListener {
 
     //Random rand = new Random();
 
@@ -18,32 +18,32 @@ public class Game extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
-        ImageButton button_back = (ImageButton) findViewById(R.id.Button_back); // команда для кнопки назад
-        button_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent1 = new Intent(Game.this, MainActivity.class);
-                startActivity(intent1);
-            }
-        });
 
+        findViewById(R.id.backBtn).setOnClickListener(this);
+        findViewById(R.id.images).setOnClickListener(this);
+        findViewById(R.id.words).setOnClickListener(this);
     }
 
-    public void OpenActivity1(View view)
-    {
-        Intent i1 = new Intent(this, GameImages.class);
-        startActivity(i1);
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.images:
+                startActivity(new Intent(Game.this, GameImages.class));
+                break;
+            case R.id.words:
+                startActivity(new Intent(Game.this, GameWords.class));
+                break;
+            case R.id.backBtn:
+                startActivity(new Intent(Game.this, MainActivity.class));
+                finish();
+                break;
+            default:
+                break;
+        }
     }
-    public void OpenActivity2(View view)
-    {
-        Intent i2 = new Intent(this, GameWords.class);
-        startActivity(i2);
-    }
-
     //Системная кнопка "назад" - начало
     @Override
     public void onBackPressed(){
-        Intent intent1 = new Intent(Game.this, MainActivity.class);
-        startActivity(intent1);
+        startActivity(new Intent(Game.this, MainActivity.class));
     }
 }

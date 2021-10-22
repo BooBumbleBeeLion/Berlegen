@@ -1,5 +1,6 @@
 package ru.uksivt.berlegen.Games;
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -23,15 +24,15 @@ import ru.uksivt.berlegen.R;
 public class GameWords extends AppCompatActivity implements View.OnClickListener {
 
     String word = "";
-    Random rand = new Random();
     String strForCheck = "";
-    Dialog dialog;
     Boolean isFull = false;
     Button[] from;
     Button[] arrOfBtns;
     int CurrentLetter =0;
     char[] alph = new char[]{'А','Б','В','Г','Ғ','Д','Ҙ','Е','Ё','Ж','З','И','Й','К','Ҡ','Л','М',
             'Н','Ң','О','Ө','П','Р','С','Ҫ','Т','У','Ү','Ф','Х','Һ','Ц','Ч','Ш','Щ','Ъ','Ы','Ь','Э','Ә','Ю','Я'};
+    Random rand = new Random();
+    Dialog dialog;
     ImageView IV;
 
     public int IndOfLet(char a)
@@ -49,12 +50,13 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
         return index;
     }
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gamewords);
 
-        ImageButton button_back = (ImageButton) findViewById(R.id.Button_back); // команда для кнопки назад
+        ImageButton button_back = findViewById(R.id.Button_back); // команда для кнопки назад
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,7 +64,8 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
                 startActivity(intent1);
             }
         });
-        IV = (ImageView)findViewById(R.id.imageView);
+
+        IV = findViewById(R.id.imageView);
 
         int w = rand.nextInt(42);
         if(w==0)
@@ -121,7 +124,7 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
                     }
 
                 }
-                if(NumIsGood == true)
+                if(NumIsGood)
                 {
                     arrOfPosLet[i] = buf;
                     arr[buf] = IndOfLet(word.charAt(i));
@@ -133,8 +136,7 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
 
 
 
-        for(int i =0; i< 6;i++)
-        {
+        for(int i =0; i< 6;i++) {
             float density = getApplicationContext().getResources().getDisplayMetrics().density;
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams((int) (density * 50), (int) (density * 50));
             Button btn = new Button(getApplicationContext());
@@ -148,7 +150,7 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
 
             btn.setTextColor(Color.WHITE);
 
-            LinearLayout buttonlayout = (LinearLayout) findViewById(R.id.buttonlayout);
+            LinearLayout buttonlayout = findViewById(R.id.buttonlayout);
             buttonlayout.addView(btn);
         }
 
@@ -193,13 +195,12 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
         }
     }
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     @Override
     public void onClick(View v) {
-        Button btn1 = (Button)v;
+        Button btn1 = (Button) v;
 
-
-
-        if(btn1.getCurrentTextColor() == Color.rgb(233,240,192) |btn1.getCurrentTextColor() == Color.rgb(233,240,193) ) {
+        if(btn1.getCurrentTextColor() == Color.rgb(233,240,192) | btn1.getCurrentTextColor() == Color.rgb(233,240,193) ) {
 
             if(btn1.getCurrentTextColor() == Color.rgb(233,240,193))
             {
@@ -237,9 +238,7 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
                     }
                 }
 
-
-
-                if (isFull == false) {
+                if (!isFull) {
                     //Toast.makeText(getApplicationContext(),"1000 btn",Toast.LENGTH_SHORT).show();
                     Button changebtn = (Button) findViewById(CurrentLetter);
 
@@ -263,7 +262,6 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
                         strForCheck += arrOfBtns[i].getText().toString();
                     }
 
-
                     boolean q = true;
 
                     for (int i = 0; i < word.length(); i++) {
@@ -273,10 +271,6 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
                         }
 
                     }
-
-
-
-
 
                     if (strForCheck.equals(word)) {
                         dialog = new Dialog(this,android.R.style.Theme_DeviceDefault_Light_NoActionBar_Fullscreen);
@@ -291,7 +285,7 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
                         q=false;
                     }
 
-                    if(q==true){
+                    if(q){
                         for(int i =0; i < word.length();i++) {
                             final Button btn12 = findViewById(i);
                             btn12.setTextColor(Color.rgb(233,240,193));
@@ -312,17 +306,12 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
         }
     }
 
-
-    public void qwer(View view)
-    {
-        Intent i = new Intent(this, GameWords.class);
-        startActivity(i);
+    public void winNext(View view) {
+        startActivity(new Intent(this, GameWords.class));
     }
-
     //Системная кнопка "назад" - начало
     @Override
     public void onBackPressed(){
-        Intent intent1 = new Intent(GameWords.this, Game.class);
-        startActivity(intent1);
+        startActivity(new Intent(GameWords.this, Game.class));
     }
 }

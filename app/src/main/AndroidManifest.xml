@@ -11,19 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:screenOrientation="portrait" android:name=".kurs2"/>
-        <activity android:screenOrientation="portrait" android:name=".kurs" />
+        <activity android:screenOrientation="portrait" android:name=".Courses.CourseCard"/>
+        <activity android:screenOrientation="portrait" android:name=".Courses.Course" />
         <activity android:screenOrientation="portrait" android:name=".Alphabet.letter" />
         <activity android:screenOrientation="portrait" android:name=".Alphabet.Alphabet" />
-        <activity android:screenOrientation="portrait" android:name=".phrase" />
-        <activity android:screenOrientation="portrait" android:name=".phrasebook" />
+        <activity android:screenOrientation="portrait" android:name=".Phrase.phrase" />
+        <activity android:screenOrientation="portrait" android:name=".Phrase.phrasebook" />
         <activity android:screenOrientation="portrait" android:name=".Games.Game" />
         <activity android:screenOrientation="portrait" android:name=".Games.GameWords" />
         <activity android:screenOrientation="portrait" android:name=".Games.GameImages" />
-        <activity android:screenOrientation="portrait" android:name=".Games.GameImagesFerma" />
-        <activity android:screenOrientation="portrait" android:name=".Games.GameImagesSemya" />
-        <activity android:screenOrientation="portrait" android:name=".Games.GameImagesPribori" />
-        <activity android:screenOrientation="portrait" android:name=".Games.GameImagesZveri" />
+        <activity android:screenOrientation="portrait" android:name=".Games.GameImagesTheme" />
         <activity android:screenOrientation="portrait" android:name=".MainActivity" />
         <activity android:screenOrientation="portrait" android:exported="true" android:name=".firstActivity">
             <intent-filter>

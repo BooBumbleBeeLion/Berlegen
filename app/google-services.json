@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "500583911385",
+    "firebase_url": "https://berlegen-1c39f-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "berlegen-1c39f",
+    "storage_bucket": "berlegen-1c39f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500583911385:android:06a2d9efc1c571ce1e53c8",
+        "android_client_info": {
+          "package_name": "ru.uksivt.berlegen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500583911385-046n86cretnpkn88oukdq3jan7nqtqpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3cVbO3Qf0WGc3gcHZ_QzKUkHAWgDIXz4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500583911385-046n86cretnpkn88oukdq3jan7nqtqpj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

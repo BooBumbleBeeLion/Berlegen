@@ -57,17 +57,15 @@
                 android:textColor="@android:color/black" />
 
             <ImageView
-                android:id="@+id/imageView1"
+                android:id="@+id/alphabet"
                 android:layout_width="match_parent"
                 android:layout_height="146dp"
-                android:onClick="OpenActivity1"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
                 app:srcCompat="@drawable/newbutton1" />
 
 
             <TextView
-                android:id="@+id/course"
                 android:layout_width="88dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -79,18 +77,14 @@
                 android:textColor="@android:color/black" />
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/course"
                 android:layout_width="match_parent"
                 android:layout_height="146dp"
-                android:onClick="OpenActivity2"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
                 app:srcCompat="@drawable/newbutton2" />
 
-
-
             <TextView
-                android:id="@+id/game"
                 android:layout_width="147dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -99,10 +93,9 @@
                 android:textColor="@android:color/black" />
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/game"
                 android:layout_width="match_parent"
                 android:layout_height="146dp"
-                android:onClick="OpenActivity4"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
                 app:srcCompat="@drawable/newbutton3" />

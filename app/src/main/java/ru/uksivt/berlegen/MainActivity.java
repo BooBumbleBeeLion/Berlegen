@@ -1,49 +1,71 @@
 package ru.uksivt.berlegen;
 
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import ru.uksivt.berlegen.Alphabet.Alphabet;
+import ru.uksivt.berlegen.Courses.Course;
 import ru.uksivt.berlegen.Games.Game;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    final private static String LOG = MainActivity.class.getSimpleName();
+
+    CheckTime checkTimeAds;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.e(LOG, "ActivityMain onCreate called:"+(CheckTime.getInAppPeriod(this)));
+        this.checkTimeAds = new CheckTime(this);
 
+        findViewById(R.id.alphabet).setOnClickListener(this);
+        findViewById(R.id.course).setOnClickListener(this);
+        findViewById(R.id.game).setOnClickListener(this);
     }
 
-
-    public void OpenActivity1(View view) {
-        Intent i1 = new Intent(this, Alphabet.class);
-        startActivity(i1);
+    @SuppressLint("NonConstantResourceId")
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.alphabet:
+                startActivity(new Intent(this, Alphabet.class));
+                break;
+            case R.id.course:
+                startActivity(new Intent(this, Course.class));
+                break;
+            case R.id.game:
+                startActivity(new Intent(this, Game.class));
+                break;
+            default:
+                break;
+        }
     }
-
-
-    public void OpenActivity2(View view) {
-        Intent i2 = new Intent(this, kurs.class);
-        startActivity(i2);
-    }
-
-
-    public void OpenActivity3(View view) {
-        Intent i3 = new Intent(this, phrasebook.class);
-        startActivity(i3);
-    }
-
-    public void OpenActivity4(View view) {
-        Intent i4 = new Intent(this, Game.class);
-        startActivity(i4);
-    }
-
     @Override
     public void onBackPressed() {
         moveTaskToBack(true);
+    }
+
+    @Override
+    public void onResume()
+    {
+        Log.e(LOG, "onResume");
+        super.onResume();
+        this.checkTimeAds.onResume();
+    }
+
+    @Override
+    public void onPause()
+    {
+        Log.e(LOG, "onPause");
+        this.checkTimeAds.onPause();
+        super.onPause();
     }
 }

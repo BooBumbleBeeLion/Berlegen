@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Projects/AS Java/Berlegen/app/src/main/res/drawable/firstpagebutton.xml" value="0.3394736842105263" />
+        <entry key="..\:/Projects/AS Java/Berlegen/app/src/main/res/drawable/nameofbutton.xml" value="0.3394736842105263" />
         <entry key="..\:/Projects/AS Java/Berlegen/app/src/main/res/drawable/stroke2.xml" value="0.3394736842105263" />
         <entry key="..\:/Projects/AS Java/Berlegen/app/src/main/res/layout/activity_alphabet.xml" value="0.32587719298245615" />
         <entry key="..\:/Projects/AS Java/Berlegen/app/src/main/res/layout/activity_first.xml" value="0.32587719298245615" />
@@ -14,8 +15,15 @@
         <entry key="..\:/Projects/AS Java/Berlegen/app/src/main/res/layout/activity_gipribori.xml" value="0.32587719298245615" />
         <entry key="..\:/Projects/AS Java/Berlegen/app/src/main/res/layout/activity_gisemya.xml" value="0.32587719298245615" />
         <entry key="..\:/Projects/AS Java/Berlegen/app/src/main/res/layout/activity_gizvery.xml" value="0.32587719298245615" />
+        <entry key="..\:/Projects/AS Java/Berlegen/app/src/main/res/layout/activity_kurs.xml" value="0.29078947368421054" />
+        <entry key="..\:/Projects/AS Java/Berlegen/app/src/main/res/layout/activity_kurs2.xml" value="0.29078947368421054" />
         <entry key="..\:/Projects/AS Java/Berlegen/app/src/main/res/layout/activity_letter.xml" value="0.32587719298245615" />
         <entry key="..\:/Projects/AS Java/Berlegen/app/src/main/res/layout/activity_main.xml" value="0.2833333333333333" />
+        <entry key="..\:/Projects/AS Java/Berlegen/app/src/main/res/layout/activity_phrase.xml" value="0.32587719298245615" />
+        <entry key="..\:/Projects/AS Java/Berlegen/app/src/main/res/layout/activity_phrasebook.xml" value="0.29078947368421054" />
+        <entry key="..\:/Projects/AS Java/Berlegen/app/src/main/res/layout/windialog.xml" value="0.32587719298245615" />
+        <entry key="..\:/Projects/AS Java/Berlegen/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3043859649122807" />
+        <entry key="..\:/Projects/AS Java/Berlegen/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3043859649122807" />
       </map>
     </option>
   </component>

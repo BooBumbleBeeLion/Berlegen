@@ -19,8 +19,7 @@ public class Alphabet extends AppCompatActivity {
         setContentView(R.layout.activity_alphabet);
     }
 
-    public void openLetter(View view)
-    {
+    public void openLetter(View view) {
         String str = getResources().getResourceEntryName(view.getId());
         Button b = (Button) view;
 
@@ -30,12 +29,10 @@ public class Alphabet extends AppCompatActivity {
         startActivity(openLetterActivity);
     }
 
-    public void goBack(View view)
-    {
+    public void goBack(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
-
 
     @Override
     public void onBackPressed(){

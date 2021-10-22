@@ -1,4 +1,4 @@
-package ru.uksivt.berlegen;
+package ru.uksivt.berlegen.Phrase;
 
 
 import android.content.Intent;
@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import ru.uksivt.berlegen.MainActivity;
+import ru.uksivt.berlegen.R;
 
 public class phrasebook extends AppCompatActivity {
 
@@ -58,7 +61,7 @@ public class phrasebook extends AppCompatActivity {
 
     public void goback(View view)
     {
-        Intent goback = new Intent(this,MainActivity.class);
+        Intent goback = new Intent(this, MainActivity.class);
         startActivity(goback);
     }
 

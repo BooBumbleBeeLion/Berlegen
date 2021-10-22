@@ -28,29 +28,33 @@ public class GameImages extends AppCompatActivity implements View.OnClickListene
 
     @SuppressLint("NonConstantResourceId")
     public void onClick(View v) {
+        Intent gameTheme = new Intent(this, GameImagesTheme.class);
         switch (v.getId()){
             case R.id.pribori:
-                startActivity(new Intent(this, GameImagesPribori.class));
+                gameTheme.putExtra("title","pribori");
+                startActivity(gameTheme);
                 break;
             case R.id.semya:
-                startActivity(new Intent(this, GameImagesSemya.class));
+                gameTheme.putExtra("title","semya");
+                startActivity(gameTheme);
                 break;
             case R.id.domzveri:
-                startActivity(new Intent(this, GameImagesZveri.class));
+                gameTheme.putExtra("title","domzveri");
+                startActivity(gameTheme);
                 break;
             case R.id.ferma:
-                startActivity(new Intent(this, GameImagesFerma.class));
+                gameTheme.putExtra("title","ferma");
+                startActivity(gameTheme);
                 break;
             case R.id.backBtn:
-                Intent intent = new Intent(this, GameImages.class);
-                startActivity(intent);
+                startActivity(new Intent(this, Game.class));
+                finish();
                 break;
         }
     }
     //Системная кнопка "назад" - начало
     @Override
     public void onBackPressed(){
-        Intent intent1 = new Intent(GameImages.this, Game.class);
-        startActivity(intent1);
+        startActivity(new Intent(GameImages.this, Game.class));
     }
 }
