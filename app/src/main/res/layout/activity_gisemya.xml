@@ -22,7 +22,7 @@
         android:src="@drawable/fon_4" />
 
     <ImageView
-        android:id="@+id/bigBro"
+        android:id="@+id/father"
         android:layout_width="112dp"
         android:layout_height="327dp"
         android:layout_below="@+id/message_input"
@@ -63,7 +63,7 @@
         android:src="@drawable/babushka" />
 
     <ImageView
-        android:id="@+id/father"
+        android:id="@+id/grandFather"
         android:layout_width="101dp"
         android:layout_height="377dp"
         android:layout_below="@+id/message_input"

@@ -53,14 +53,7 @@ public class CheckTime {
     {
         SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(ctx);
         long out = pref.getLong(PREF_KEY_IN_APP_PERIOD, 0L);
-        out = out / 1000L; // Секунды
-//        if(out > 60L) { // Если число содержит минуты
-//            if(out > 3600L){ // Если содержит часы
-//                if(out > 86400L){ // Если содержит дни
-//
-//                }
-//            }
-//        }
+        out = out / 1000L;
 
         return out;
     }

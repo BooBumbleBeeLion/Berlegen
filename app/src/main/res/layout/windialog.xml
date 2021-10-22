@@ -38,19 +38,18 @@
         app:srcCompat="@drawable/cup" />
 
 
-
     <Button
         android:id="@+id/nextbutton"
-        android:layout_marginTop="70dp"
-        android:layout_marginBottom="70dp"
-        android:layout_centerHorizontal="true"
-        android:onClick="winNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/stroke"
-        android:textColor="@android:color/black"
         android:layout_alignParentBottom="true"
-        android:text="    Следующее слово    " />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/stroke"
+        android:onClick="winNext"
+        android:text="    Следующее слово    "
+        android:textColor="@android:color/black" />
 
 
 </RelativeLayout>

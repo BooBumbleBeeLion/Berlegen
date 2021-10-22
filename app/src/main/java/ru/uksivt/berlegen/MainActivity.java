@@ -1,12 +1,16 @@
 package ru.uksivt.berlegen;
 
 
+import static com.google.android.material.internal.ContextUtils.getActivity;
+
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import ru.uksivt.berlegen.Alphabet.Alphabet;
@@ -50,7 +54,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     @Override
     public void onBackPressed() {
-        moveTaskToBack(true);
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Вы куда?")
+                .setMessage("Уверены, что хотите выйти?")
+                .setPositiveButton("Выйти", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        moveTaskToBack(true);
+                        dialog.cancel();
+                    }
+                })
+                .setNegativeButton("Остаться", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+        builder.create().show();
     }
 
     @Override

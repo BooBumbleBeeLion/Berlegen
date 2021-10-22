@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -34,6 +35,12 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
     Random rand = new Random();
     Dialog dialog;
     ImageView IV;
+
+    boolean playing = true, nowPlay = false;
+    int rawBash = 0, rawRus = 0, w = 0;
+    int[] sounds;
+    int index;
+    MediaPlayer mediaPlayer = new MediaPlayer();
 
     public int IndOfLet(char a)
     {
@@ -67,7 +74,7 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
 
         IV = findViewById(R.id.imageView);
 
-        int w = rand.nextInt(42);
+        w = rand.nextInt(42);
         if(w==0)
             w =1;
 
@@ -79,6 +86,10 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
         arrOfBtns = new Button[word.length()];
         int holder4 = getResources().getIdentifier("a"+w,"drawable",this.getPackageName());
         IV.setImageDrawable(getResources().getDrawable(holder4));
+        // Озвучка
+        rawBash = getResources().getIdentifier("sb" + w,"raw",this.getPackageName());
+        rawRus = getResources().getIdentifier("sr" + w, "raw", this.getPackageName());
+        sounds = new int[] {rawBash, rawRus};
 
 
         float d = getApplicationContext().getResources().getDisplayMetrics().density;
@@ -239,15 +250,11 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
                 }
 
                 if (!isFull) {
-                    //Toast.makeText(getApplicationContext(),"1000 btn",Toast.LENGTH_SHORT).show();
-                    Button changebtn = (Button) findViewById(CurrentLetter);
+                    Button changebtn = findViewById(CurrentLetter);
 
-                    //Log.d("MyLogs3","----" + changebtn.getText().toString());
                     while (!changebtn.getText().toString().equals("")) {
                         CurrentLetter++;
-
                         changebtn = findViewById(CurrentLetter);
-
                     }
                     arrOfBtns[CurrentLetter] = changebtn;
                     CurrentLetter++;
@@ -278,10 +285,10 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
                         dialog.setContentView(R.layout.windialog);
 
                         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                        //dialog.setCancelable(false);
+                        dialog.setCancelable(false);
                         dialog.show();
-                        //Toast.makeText(getApplicationContext(), "Ты победил!", Toast.LENGTH_SHORT).show();
 
+                        playMp3();
                         q=false;
                     }
 
@@ -298,16 +305,38 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
                                     btn12.animate().rotation(0).setDuration(300);
                                 }
                             },500);
-
-
                         }}
                 }
             }
         }
     }
 
+    public void playMp3() {
+        if(!nowPlay) {
+            nowPlay = true;
+            index = 0;
+            mediaPlayer = MediaPlayer.create(getApplicationContext(), sounds[index]);
+            mediaPlayer.setLooping(false);
+            mediaPlayer.start();
+            mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                public void onCompletion(MediaPlayer mp) {
+                    if (index < sounds.length - 1) {
+                        mp = MediaPlayer.create(getApplicationContext(), sounds[++index]);
+                        mp.start();
+                        mp.setOnCompletionListener(this);
+                    }
+                    else {
+                        mp.release();
+                        nowPlay =false;
+                    }
+                }
+            });
+        }
+    }
+
     public void winNext(View view) {
-        startActivity(new Intent(this, GameWords.class));
+        if(!nowPlay)
+            startActivity(new Intent(this, GameWords.class));
     }
     //Системная кнопка "назад" - начало
     @Override
