@@ -183,8 +183,7 @@ public class GameImagesTheme extends AppCompatActivity implements View.OnClickLi
         }
     }
 
-    public void playMp3()
-    {
+    void playMp3() {
         if(!nowPlay && isImageScaled) {
             nowPlay = true;
             index = 0;

@@ -18,10 +18,8 @@ public class letter extends AppCompatActivity {
     boolean playing = true, nowPlay =false;
     int[] sounds;
     int index;
-    Random r = new Random();
-    Button btn;
     TextView word, bashWord;
-    ImageView IV, Background;
+    ImageView IV, Background, letterImg;
     MediaPlayer mediaPlayer = new MediaPlayer();
 
     @Override
@@ -29,17 +27,16 @@ public class letter extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_letter);
 
-        word = findViewById(R.id.word) ;
-        bashWord = findViewById(R.id.bashWord) ;
-        btn = findViewById(R.id.letterImage) ;
-        IV = findViewById(R.id.imageWord);
+        word = findViewById(R.id.bashWord) ;
+        bashWord = findViewById(R.id.word) ;
+        letterImg = findViewById(R.id.letterImage) ;
+        IV = findViewById(R.id.image);
         Background = findViewById(R.id.background);
 
         // Достаются данные, переданные из Alphabet.java
         word.setText(getIntent().getStringExtra("letter"));
         bashWord.setText(getIntent().getStringExtra("letter"));
         String w = getIntent().getStringExtra("letter").substring(1);
-        btn.setText(getIntent().getStringExtra("let"));
 
         // Ресурсы mp3 записываются
         int letterMp = getResources().getIdentifier("l"+w,"raw",this.getPackageName());
@@ -57,12 +54,16 @@ public class letter extends AppCompatActivity {
         int bashHolder = getResources().getIdentifier(bashLetter,"string",this.getPackageName());
         bashWord.setText(getResources().getString(bashHolder));
 
+        // Картинка буквы
+        int letterImage = getResources().getIdentifier("l"+w,"drawable",this.getPackageName());
+        letterImg.setImageDrawable(getResources().getDrawable(letterImage));
+
         // Картинка на основании буквы
         int wordImage = getResources().getIdentifier("a"+w,"drawable",this.getPackageName());
         IV.setImageDrawable(getResources().getDrawable(wordImage));
 
-        // Рандомный Background
-        int backgroundImage = getResources().getIdentifier("f"+r.nextInt(32),"drawable",this.getPackageName());
+        // Background буквы
+        int backgroundImage = getResources().getIdentifier("back"+w,"drawable",this.getPackageName());
         Background.setScaleType(ImageView.ScaleType.CENTER_CROP);
         Background.setImageDrawable(getResources().getDrawable(backgroundImage));
     }

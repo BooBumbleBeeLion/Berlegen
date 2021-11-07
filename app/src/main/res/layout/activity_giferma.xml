@@ -16,7 +16,7 @@
         android:layout_marginTop="-2dp"
         android:layout_marginBottom="0dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/fon2" />
+        android:src="@drawable/fonferma" />
 
     <ImageView
         android:id="@+id/cow"
@@ -85,7 +85,8 @@
         android:paddingLeft="60dp"
         android:text="Найди картинки"
         android:textColor="@android:color/white"
-        android:textSize="18dp" />
+        android:textSize="26sp"
+        style="@style/text"/>
 
     <ImageButton
         android:id="@+id/backBtn"

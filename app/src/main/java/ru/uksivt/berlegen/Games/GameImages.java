@@ -6,23 +6,31 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import ru.uksivt.berlegen.R;
+import ru.uksivt.berlegen.RndBackground;
 
 public class GameImages extends AppCompatActivity implements View.OnClickListener {
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gameimages);
 
+        ImageView main = findViewById(R.id.background);
+        main.setImageDrawable(getResources().getDrawable(
+                getResources().getIdentifier(RndBackground.random(),"drawable",this.getPackageName())
+        ));
+
         findViewById(R.id.backBtn).setOnClickListener(this);
-        findViewById(R.id.pribori).setOnClickListener(this);
-        findViewById(R.id.semya).setOnClickListener(this);
-        findViewById(R.id.domzveri).setOnClickListener(this);
-        findViewById(R.id.ferma).setOnClickListener(this);
+        findViewById(R.id.imagePribori).setOnClickListener(this);
+        findViewById(R.id.imageSemya).setOnClickListener(this);
+        findViewById(R.id.imageDomZveri).setOnClickListener(this);
+        findViewById(R.id.imageFerma).setOnClickListener(this);
 
     }
 
@@ -30,19 +38,19 @@ public class GameImages extends AppCompatActivity implements View.OnClickListene
     public void onClick(View v) {
         Intent gameTheme = new Intent(this, GameImagesTheme.class);
         switch (v.getId()){
-            case R.id.pribori:
+            case R.id.imagePribori:
                 gameTheme.putExtra("title","pribori");
                 startActivity(gameTheme);
                 break;
-            case R.id.semya:
+            case R.id.imageSemya:
                 gameTheme.putExtra("title","semya");
                 startActivity(gameTheme);
                 break;
-            case R.id.domzveri:
+            case R.id.imageDomZveri:
                 gameTheme.putExtra("title","domzveri");
                 startActivity(gameTheme);
                 break;
-            case R.id.ferma:
+            case R.id.imageFerma:
                 gameTheme.putExtra("title","ferma");
                 startActivity(gameTheme);
                 break;

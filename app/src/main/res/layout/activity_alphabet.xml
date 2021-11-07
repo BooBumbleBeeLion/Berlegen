@@ -7,10 +7,9 @@
     tools:context=".Alphabet.Alphabet">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/background1"
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scaleType="centerCrop"/>
 
     <LinearLayout
@@ -28,7 +27,8 @@
             android:text="Алфавит"
             android:paddingLeft="60dp"
             android:textColor="@android:color/white"
-            android:textSize="18dp" />
+            android:textSize="24sp"
+            style="@style/text"/>
 
 
         <ScrollView
@@ -48,41 +48,34 @@
                     android:layout_margin="10dp"
                     android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/l1"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Aa"
-                        android:textAppearance="@style/letter" />
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l1"
+                            android:background="@drawable/l1"
+                            android:text="Аа"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l2"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Бб"
-                        android:textAppearance="@style/letter" />
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l2"
+                            android:background="@drawable/l2"
+                            android:text="Бб"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l3"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Вв"
-                        android:textAppearance="@style/letter" />
+                    <LinearLayout
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l3"
+                            android:background="@drawable/l3"
+                            android:text="Вв"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -91,41 +84,35 @@
                     android:layout_margin="10dp"
                     android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/l4"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Гг"
-                        android:textAppearance="@style/letter" />
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l4"
+                            android:background="@drawable/l4"
+                            android:text="Гг"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l5"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Ғғ"
-                        android:textAppearance="@style/letter" />
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l5"
+                            android:background="@drawable/l5"
+                            android:text="Ғғ"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l6"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Дд"
-                        android:textAppearance="@style/letter" />
+                    <LinearLayout
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l6"
+                            android:background="@drawable/l6"
+                            android:text="Дд"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -134,41 +121,34 @@
                     android:layout_margin="10dp"
                     android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/l7"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Ҙҙ"
-                        android:textAppearance="@style/letter" />
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l7"
+                            android:background="@drawable/l7"
+                            android:text="Ҙҙ"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l8"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Ее"
-                        android:textAppearance="@style/letter" />
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l8"
+                            android:background="@drawable/l8"
+                            android:text="Ее"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l9"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Ёё"
-                        android:textAppearance="@style/letter" />
+                    <LinearLayout
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l9"
+                            android:background="@drawable/l9"
+                            android:text="Ёё"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -177,42 +157,34 @@
                     android:layout_margin="10dp"
                     android:orientation="horizontal">
 
-                    <Button
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:id="@+id/l10"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:textSize="35sp"
-                        android:text="Жж"
-                        android:textAppearance="@style/letter" />
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l10"
+                            android:background="@drawable/l10"
+                            android:text="Жж"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l11"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Зз"
-                        android:textAppearance="@style/letter" />
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l11"
+                            android:background="@drawable/l11"
+                            android:text="Зз"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l12"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Ии"
-                        android:textAppearance="@style/letter" />
+                    <LinearLayout
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l12"
+                            android:background="@drawable/l12"
+                            android:text="Ии"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
                 </LinearLayout>
 
 
@@ -222,41 +194,70 @@
                     android:layout_margin="10dp"
                     android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/l13"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Йй"
-                        android:textAppearance="@style/letter" />
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l13"
+                            android:background="@drawable/l13"
+                            android:text="Йй"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l14"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Кк"
-                        android:textAppearance="@style/letter" />
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l14"
+                            android:background="@drawable/l14"
+                            android:text="Кк"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l15"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Ҡҡ"
-                        android:textAppearance="@style/letter"/>
+                    <LinearLayout
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l15"
+                            android:background="@drawable/l15"
+                            android:text="Ҡҡ"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_marginEnd="40dp"
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l16"
+                            android:background="@drawable/l16"
+                            android:text="Лл"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginEnd="40dp"
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l17"
+                            android:background="@drawable/l17"
+                            android:text="Мм"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l18"
+                            android:background="@drawable/l18"
+                            android:text="Нн"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
                 </LinearLayout>
 
 
@@ -266,42 +267,35 @@
                     android:layout_margin="10dp"
                     android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/l16"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Лл"
-                        android:textAppearance="@style/letter" />
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l19"
+                            android:background="@drawable/l19"
+                            android:text="Ңң"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l17"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:textSize="40sp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Мм"
-                        android:textAppearance="@style/letter"/>
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l20"
+                            android:background="@drawable/l20"
+                            android:text="Оо"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l18"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Нн"
-                        android:textAppearance="@style/letter" />
+                    <LinearLayout
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l21"
+                            android:background="@drawable/l21"
+                            android:text="Өө"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
+
                 </LinearLayout>
 
 
@@ -311,42 +305,34 @@
                     android:layout_margin="10dp"
                     android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/l19"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Ңң"
-                        android:textAppearance="@style/letter"/>
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l22"
+                            android:background="@drawable/l22"
+                            android:text="Пп"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l20"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Оо"
-                        android:textAppearance="@style/letter" />
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l23"
+                            android:background="@drawable/l23"
+                            android:text="Рр"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l21"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="@drawable/stroke"
-                        android:textAppearance="@style/letter"
-                        android:onClick="openLetter"
-                        android:text="Өө"
-                         />
+                    <LinearLayout
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l24"
+                            android:background="@drawable/l24"
+                            android:text="Сс"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
                 </LinearLayout>
 
 
@@ -356,41 +342,35 @@
                     android:layout_margin="10dp"
                     android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/l22"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Пп"
-                        android:textAppearance="@style/letter"/>
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l25"
+                            android:background="@drawable/l25"
+                            android:text="Ҫҫ"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l23"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Рр"
-                        android:textAppearance="@style/letter"/>
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l26"
+                            android:background="@drawable/l26"
+                            android:text="Тт"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l24"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Сс"
-                        android:textAppearance="@style/letter"/>
+                    <LinearLayout
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l27"
+                            android:background="@drawable/l27"
+                            android:text="Уу"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
+
                 </LinearLayout>
 
 
@@ -400,41 +380,35 @@
                     android:layout_margin="10dp"
                     android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/l25"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Ҫҫ"
-                        android:textAppearance="@style/letter"/>
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l28"
+                            android:background="@drawable/l28"
+                            android:text="Үү"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l26"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Тт"
-                        android:textAppearance="@style/letter"/>
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l29"
+                            android:background="@drawable/l29"
+                            android:text="Фф"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l27"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Уу"
-                        android:textAppearance="@style/letter"/>
+                    <LinearLayout
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l30"
+                            android:background="@drawable/l30"
+                            android:text="Хх"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
+
                 </LinearLayout>
 
 
@@ -444,41 +418,35 @@
                     android:layout_margin="10dp"
                     android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/l28"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Үү"
-                        android:textAppearance="@style/letter"/>
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l31"
+                            android:background="@drawable/l31"
+                            android:text="Һһ"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l29"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Фф"
-                        android:textAppearance="@style/letter"/>
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l32"
+                            android:background="@drawable/l32"
+                            android:text="Цц"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l30"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Хх"
-                        android:textAppearance="@style/letter"/>
+                    <LinearLayout
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l33"
+                            android:background="@drawable/l33"
+                            android:text="Чч"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
+
                 </LinearLayout>
 
 
@@ -488,41 +456,35 @@
                     android:layout_margin="10dp"
                     android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/l31"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Һһ"
-                        android:textAppearance="@style/letter"/>
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l34"
+                            android:background="@drawable/l34"
+                            android:text="Шш"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l32"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Цц"
-                        android:textAppearance="@style/letter"/>
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l35"
+                            android:background="@drawable/l35"
+                            android:text="Щщ"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l33"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Чч"
-                        android:textAppearance="@style/letter"/>
+                    <LinearLayout
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l36"
+                            android:background="@drawable/l36"
+                            android:text="Ъъ"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
+
                 </LinearLayout>
 
 
@@ -532,88 +494,35 @@
                     android:layout_margin="10dp"
                     android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/l34"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:textSize="40sp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Шш"
-                        android:textAppearance="@style/letter"/>
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l37"
+                            android:background="@drawable/l37"
+                            android:text="Ыы"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l35"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:textSize="35sp"
-                        android:text="Щщ"
-                        android:textAppearance="@style/letter"/>
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l38"
+                            android:background="@drawable/l38"
+                            android:text="Ьь"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l36"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Ъъ"
-                        android:textAppearance="@style/letter"/>
-                </LinearLayout>
+                    <LinearLayout
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l39"
+                            android:background="@drawable/l39"
+                            android:text="Ээ"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/l37"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:layout_marginEnd="40dp"
-                        android:textSize="40sp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Ыы"
-                        android:textAppearance="@style/letter"/>
-
-                    <Button
-                        android:id="@+id/l38"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Ьь"
-                        android:textAppearance="@style/letter"/>
-
-                    <Button
-                        android:id="@+id/l39"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Ээ"
-                        android:textAppearance="@style/letter"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -622,46 +531,39 @@
                     android:layout_margin="10dp"
                     android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/l40"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Әә"
-                        android:textAppearance="@style/letter"/>
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l40"
+                            android:background="@drawable/l40"
+                            android:text="Әә"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l41"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
+                    <LinearLayout
                         android:layout_marginEnd="40dp"
-                        android:textSize="40sp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Юю"
-                        android:textAppearance="@style/letter"/>
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l41"
+                            android:background="@drawable/l41"
+                            android:text="Юю"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/l42"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="@drawable/stroke"
-                        android:onClick="openLetter"
-                        android:text="Яя"
-                        android:textAppearance="@style/letter"/>
+                    <LinearLayout
+                        style="@style/letter">
+                        <TextView
+                            android:id="@+id/l42"
+                            android:background="@drawable/l42"
+                            android:text="Яя"
+                            style="@style/textLetter"/>
+                    </LinearLayout>
+
                 </LinearLayout>
-
 
             </LinearLayout>
+
         </ScrollView>
 
 

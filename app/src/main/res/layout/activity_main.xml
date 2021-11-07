@@ -8,99 +8,153 @@
 
     <ImageView
         android:id="@+id/background"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/backgroundcrop" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
 
     <TextView
         android:id="@+id/glav"
+        style="@style/text"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:background="#43A30C"
         android:clickable="false"
         android:gravity="center_vertical"
-        android:text="Изучаем башкирский язык"
         android:paddingStart="15dp"
+        android:text="Изучаем башкирский язык"
         android:textColor="@android:color/white"
-        android:textSize="18dp" />
+        android:textSize="24sp" />
 
-    <ScrollView
-
-        android:layout_width="match_parent"
-        android:layout_height="664dp"
+    <RelativeLayout
+        android:id="@+id/alphabet"
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/glav"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="-1dp"
-        android:layout_marginBottom="13dp">
+        android:background="@drawable/bashfon">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <ImageView
+            android:layout_width="130dp"
             android:layout_height="match_parent"
-            android:layout_marginTop="50dp"
-            android:orientation="vertical"
-            android:padding="5dp">
+            android:background="@drawable/ae"
+            android:scaleType="centerCrop"/>
 
+        <TextView
+            android:id="@+id/bashalp"
+            style="@style/text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="start"
+            android:padding="5dp"
+            android:text="Башкирский алфавит"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/Alphabet"
-                android:layout_width="88dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:background="@drawable/nameofbutton"
-                android:paddingStart="5dp"
-                android:paddingEnd="5dp"
-                android:text="Алфавит"
-                android:textAlignment="center"
-                android:textColor="@android:color/black" />
+        <TextView
+            style="@style/text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bashalp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:gravity="start"
+            android:padding="10dp"
+            android:text="Изучай буквы\nУлучшай произношение\nЗапоминай слова"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
 
-            <ImageView
-                android:id="@+id/alphabet"
-                android:layout_width="match_parent"
-                android:layout_height="146dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                app:srcCompat="@drawable/newbutton1" />
+    </RelativeLayout>
 
+    <RelativeLayout
+        android:id="@+id/course"
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/alphabet"
+        android:background="@drawable/coursegradient">
 
-            <TextView
-                android:layout_width="88dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:background="@drawable/nameofbutton"
-                android:paddingStart="5dp"
-                android:paddingEnd="5dp"
-                android:text="Курсы"
-                android:textAlignment="center"
-                android:textColor="@android:color/black" />
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ae"
+            android:scaleType="centerCrop" />
 
-            <ImageView
-                android:id="@+id/course"
-                android:layout_width="match_parent"
-                android:layout_height="146dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                app:srcCompat="@drawable/newbutton2" />
+        <TextView
+            android:id="@+id/coursetext"
+            style="@style/text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="start"
+            android:padding="5dp"
+            android:text="Башкирские слова"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
-            <TextView
-                android:layout_width="147dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:background="@drawable/nameofbutton"
-                android:text="   Игровая зона"
-                android:textColor="@android:color/black" />
+        <TextView
+            style="@style/text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coursetext"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:gravity="start"
+            android:padding="10dp"
+            android:text="Изучай новые слова\nЗапоминай перевод\nУсваивай грамматику"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
 
-            <ImageView
-                android:id="@+id/game"
-                android:layout_width="match_parent"
-                android:layout_height="146dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                app:srcCompat="@drawable/newbutton3" />
+    </RelativeLayout>
 
-        </LinearLayout>
-    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/game"
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/course"
+        android:background="@drawable/gamegradient">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ae"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/gametext"
+            style="@style/text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="start"
+            android:padding="5dp"
+            android:text="Учимся и играем"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            style="@style/text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gametext"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:gravity="start"
+            android:padding="10dp"
+            android:text="Изучай Башкирский язык\nВесело и интересно"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
 
 </RelativeLayout>

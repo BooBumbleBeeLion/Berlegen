@@ -5,54 +5,87 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <ImageView
-        android:id="@+id/icon"
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:id="@+id/GameImages"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_below="@+id/message_input"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/foodstroke">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/transparent" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#fa2255"
-        android:scaleType="centerCrop"
-        android:src="@drawable/background1" />
+        android:layout_below="@id/GameImages"
+        android:layout_alignStart="@id/GameImages"
+        android:layout_alignEnd="@id/GameImages"
+        android:layout_marginTop="-14dp"
+        android:layout_marginStart="-15dp"
+        android:layout_marginEnd="-15dp"
+        android:background="@drawable/foodstroke90"
+        android:padding="5dp"
+        android:text="Найди кого-то или что-то и узнай как это звучит"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:gravity="center"
+        style="@style/text"/>
 
-    <LinearLayout
-        android:layout_width="352dp"
+    <RelativeLayout
+        android:id="@+id/GameWord"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_below="@+id/number"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/numberstroke">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gamewordimg" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/food"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/icon"
-        android:layout_alignTop="@+id/message_input"
-        android:layout_alignEnd="@+id/icon"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="43dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="0dp"
-        android:orientation="vertical"
-        android:paddingTop="1dp">
-
-        <ImageView
-            android:id="@+id/images"
-            android:layout_width="match_parent"
-            android:layout_height="170dp"
-            android:layout_below="@+id/message_input"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="0dp"
-            android:layout_toStartOf="@+id/p"
-            app:srcCompat="@drawable/newbutton5" />
-
-
-        <ImageView
-            android:id="@+id/words"
-            android:layout_width="match_parent"
-            android:layout_height="170dp"
-            android:layout_below="@+id/number"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="3dp"
-            android:layout_marginEnd="0dp"
-            android:layout_toStartOf="@+id/p"
-            app:srcCompat="@drawable/newbutton4" />
-    </LinearLayout>
+        android:layout_below="@id/GameWord"
+        android:layout_alignStart="@id/GameWord"
+        android:layout_alignEnd="@id/GameWord"
+        android:layout_marginTop="-14dp"
+        android:layout_marginStart="-15dp"
+        android:layout_marginEnd="-15dp"
+        android:background="@drawable/numberstroke90"
+        android:padding="10dp"
+        android:text="Найди правильные буквы"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:gravity="center"
+        style="@style/text"/>
 
     <TextView
         android:id="@+id/message_input"
@@ -64,7 +97,8 @@
         android:text="Игровая команата"
         android:paddingLeft="60dp"
         android:textColor="@android:color/white"
-        android:textSize="18dp" />
+        android:textSize="24dp"
+        style="@style/text"/>
 
     <ImageButton
         android:id="@+id/backBtn"

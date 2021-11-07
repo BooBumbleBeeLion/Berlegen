@@ -19,7 +19,7 @@
         android:layout_marginBottom="-2dp"
         android:background="#fa2255"
         android:scaleType="centerCrop"
-        android:src="@drawable/fon_4" />
+        android:src="@drawable/fonanimal" />
 
     <ImageView
         android:id="@+id/father"
@@ -106,10 +106,11 @@
         android:background="#43A30C"
         android:clickable="false"
         android:gravity="center_vertical"
-        android:text="Найди картинки"
         android:paddingLeft="60dp"
+        android:text="Найди картинки"
         android:textColor="@android:color/white"
-        android:textSize="18dp" />
+        android:textSize="26sp"
+        style="@style/text"/>
 
     <ImageButton
         android:id="@+id/backBtn"

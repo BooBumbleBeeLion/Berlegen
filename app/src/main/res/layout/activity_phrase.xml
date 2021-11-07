@@ -6,28 +6,17 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/icon"
-        android:layout_width="395dp"
-        android:layout_height="786dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="-3dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="-3dp"
-        android:background="#fa2255"
-        android:scaleType="centerCrop"
-        android:src="@drawable/background1" />
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
 
     <Button
         android:id="@+id/nobutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/icon"
-        android:layout_alignEnd="@+id/icon"
+        android:layout_alignStart="@+id/background"
+        android:layout_alignEnd="@+id/background"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="110dp"
@@ -43,8 +32,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/nobutton"
-        android:layout_alignStart="@+id/icon"
-        android:layout_alignEnd="@+id/icon"
+        android:layout_alignStart="@+id/background"
+        android:layout_alignEnd="@+id/background"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"

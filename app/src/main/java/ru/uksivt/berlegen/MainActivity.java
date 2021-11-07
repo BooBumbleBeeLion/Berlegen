@@ -1,14 +1,12 @@
 package ru.uksivt.berlegen;
 
-
-import static com.google.android.material.internal.ContextUtils.getActivity;
-
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,16 +17,16 @@ import ru.uksivt.berlegen.Games.Game;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    final private static String LOG = MainActivity.class.getSimpleName();
-
-    CheckTime checkTimeAds;
-
+    @SuppressLint("UseCompatLoadingForDrawables")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.e(LOG, "ActivityMain onCreate called:"+(CheckTime.getInAppPeriod(this)));
-        this.checkTimeAds = new CheckTime(this);
+
+        ImageView main = findViewById(R.id.background);
+        main.setImageDrawable(getResources().getDrawable(
+                getResources().getIdentifier(RndBackground.random(),"drawable",this.getPackageName())
+        ));
 
         findViewById(R.id.alphabet).setOnClickListener(this);
         findViewById(R.id.course).setOnClickListener(this);
@@ -47,8 +45,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.game:
                 startActivity(new Intent(this, Game.class));
-                break;
-            default:
                 break;
         }
     }
@@ -69,21 +65,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                 });
         builder.create().show();
-    }
-
-    @Override
-    public void onResume()
-    {
-        Log.e(LOG, "onResume");
-        super.onResume();
-        this.checkTimeAds.onResume();
-    }
-
-    @Override
-    public void onPause()
-    {
-        Log.e(LOG, "onPause");
-        this.checkTimeAds.onPause();
-        super.onPause();
     }
 }

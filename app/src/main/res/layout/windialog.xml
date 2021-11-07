@@ -21,7 +21,8 @@
         android:gravity="center"
         android:text="Правильно!"
         android:textColor="#FFFFFF"
-        android:textSize="45sp" />
+        android:textSize="45sp"
+        style="@style/text"/>
 
     <ImageView
         android:id="@+id/imageView8"
@@ -48,8 +49,11 @@
         android:layout_marginBottom="70dp"
         android:background="@drawable/stroke"
         android:onClick="winNext"
-        android:text="    Следующее слово    "
-        android:textColor="@android:color/black" />
+        android:text="Следующее слово"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:padding="10dp"
+        style="@style/text"/>
 
 
 </RelativeLayout>

@@ -7,65 +7,182 @@
     android:layout_height="match_parent"
     android:id="@+id/RelativeLayout">
 
-
     <ImageView
-        android:id="@+id/icon"
+        android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/fon1" />
+        android:scaleType="centerCrop"/>
 
-
-    <LinearLayout
-        android:id="@+id/firstRow"
-        android:layout_width="match_parent"
-        android:layout_height="170dp"
-        android:layout_marginTop="20dp"
+    <RelativeLayout
+        android:id="@+id/imagePribori"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
         android:layout_below="@+id/message_input"
-        android:orientation="horizontal">
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/numberstroke">
 
         <ImageView
-            android:id="@+id/pribori"
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/pribori" />
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/transparent" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/number"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagePribori"
+        android:layout_alignStart="@id/imagePribori"
+        android:layout_alignEnd="@id/imagePribori"
+        android:layout_marginTop="-14dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginEnd="-10dp"
+        android:background="@drawable/numberstroke90"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Кухонные приборы"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/imageSemya"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/message_input"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/animalstroke">
 
         <ImageView
-            android:id="@+id/semya"
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/semya" />
-    </LinearLayout>
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@android:color/transparent" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="170dp"
-        android:orientation="horizontal"
-        android:layout_below="@+id/firstRow">
-        <ImageView
-            android:id="@+id/domzveri"
-            android:layout_width="200dp"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/domzveri" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/animals"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageSemya"
+        android:layout_alignStart="@id/imageSemya"
+        android:layout_alignEnd="@id/imageSemya"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="-14dp"
+        android:layout_marginEnd="-10dp"
+        android:background="@drawable/animalstroke90"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Семья"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/imageDomZveri"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/number"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/foodstroke">
 
         <ImageView
-            android:id="@+id/ferma"
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/ferma"/>
-    </LinearLayout>
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@android:color/transparent" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/food"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageDomZveri"
+        android:layout_alignStart="@id/imageDomZveri"
+        android:layout_alignEnd="@id/imageDomZveri"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="-14dp"
+        android:layout_marginEnd="-10dp"
+        android:background="@drawable/foodstroke90"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Домашние животные"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/imageFerma"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/animals"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/profstroke">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@android:color/transparent" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/prof"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/imageFerma"
+        android:layout_alignStart="@id/imageFerma"
+        android:layout_alignEnd="@id/imageFerma"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="-14dp"
+        android:layout_marginEnd="-10dp"
+        android:background="@drawable/profstroke90"
+        android:gravity="center"
+        android:text="Животные на ферме"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/message_input"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:background="#43A30C"
-        android:clickable="false"
         android:gravity="center_vertical"
-        android:text="Игровая комната"
         android:paddingLeft="60dp"
+        android:text="Игровая комната"
         android:textColor="@android:color/white"
-        android:textSize="18dp" />
+        android:textSize="24dp"
+        style="@style/text"/>
 
     <ImageButton
         android:id="@+id/backBtn"

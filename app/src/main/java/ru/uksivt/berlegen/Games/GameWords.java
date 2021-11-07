@@ -21,6 +21,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.Random;
 
 import ru.uksivt.berlegen.R;
+import ru.uksivt.berlegen.RndBackground;
 
 public class GameWords extends AppCompatActivity implements View.OnClickListener {
 
@@ -29,7 +30,7 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
     Boolean isFull = false;
     Button[] from;
     Button[] arrOfBtns;
-    int CurrentLetter =0;
+    int CurrentLetter = 0;
     char[] alph = new char[]{'А','Б','В','Г','Ғ','Д','Ҙ','Е','Ё','Ж','З','И','Й','К','Ҡ','Л','М',
             'Н','Ң','О','Ө','П','Р','С','Ҫ','Т','У','Ү','Ф','Х','Һ','Ц','Ч','Ш','Щ','Ъ','Ы','Ь','Э','Ә','Ю','Я'};
     Random rand = new Random();
@@ -62,6 +63,11 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gamewords);
+
+        ImageView main = findViewById(R.id.background);
+        main.setImageDrawable(getResources().getDrawable(
+                getResources().getIdentifier(RndBackground.random(),"drawable",this.getPackageName())
+        ));
 
         ImageButton button_back = findViewById(R.id.Button_back); // команда для кнопки назад
         button_back.setOnClickListener(new View.OnClickListener() {

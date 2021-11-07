@@ -7,126 +7,107 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/icon"
-        android:layout_width="wrap_content"
-        android:layout_height="642dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="-1dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="-2dp"
-        android:background="#fa2255"
-        android:scaleType="centerCrop"
-        android:src="@drawable/background1" />
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
 
-    <View
-        android:id="@+id/View"
-        android:layout_width="wrap_content"
-        android:layout_height="257dp"
-        android:layout_below="@+id/message_input"
+    <ImageView
+        android:id="@+id/letterCard"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="136dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/stroke2"
-        android:paddingStart="@dimen/padding_small2" />
+        android:layout_marginTop="125dp"
+        android:background="@drawable/stroke2" />
 
-    <TextView
-        android:id="@+id/textru"
-        android:layout_width="wrap_content"
-        android:layout_height="36dp"
-        android:layout_below="@+id/View3"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
+    <RelativeLayout
+        android:id="@+id/imageWord"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textru"
+        android:layout_alignStart="@id/letterCard"
+        android:layout_alignEnd="@id/letterCard"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/wordofletter"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp" />
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/whitestroke">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"/>
+
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/textbash"
-        android:layout_width="201dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/View3"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="77dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="77dp"
-        android:layout_marginBottom="23dp"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/imageWord"
+        android:layout_alignStart="@id/imageWord"
+        android:layout_alignEnd="@id/imageWord"
+        android:layout_marginStart="-14dp"
+        android:layout_marginTop="-14dp"
+        android:layout_marginEnd="-14dp"
+        android:background="@drawable/stroke3"
+        android:padding="2dp"
+        android:text="word"
         android:textAlignment="center"
-        android:textColor="#000"
-        android:textSize="18sp" />
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
 
-    <View
-        android:id="@+id/View3"
-        android:layout_width="194dp"
-        android:layout_height="162dp"
+    <TextView
+        android:id="@+id/textru"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/message_input"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/stroke2"
-        android:paddingStart="@dimen/padding_small2" />
+        android:layout_alignStart="@id/imageWord"
+        android:layout_alignEnd="@id/imageWord"
+        android:layout_marginTop="100dp"
+        android:padding="2dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="23sp" />
 
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="167dp"
-        android:layout_height="129dp"
-        android:layout_alignStart="@+id/View3"
-        android:layout_alignTop="@+id/View3"
-        android:layout_alignEnd="@+id/View3"
-        android:layout_alignBottom="@+id/View3"
-        android:layout_marginStart="13dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="13dp"/>
+    <RelativeLayout
+        android:id="@+id/play"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/textbash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/stroke3"
+        android:onClick="playMp3">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/zvuk" />
+    </RelativeLayout>
 
     <Button
         android:id="@+id/Button_next"
         android:layout_width="143dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/icon"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="18dp"
-        android:background="@drawable/kek"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/stroke"
         android:onClick="next"
         android:text="Следующее" />
 
-    <ImageButton
-        android:id="@+id/zvuk"
-        android:layout_width="99dp"
-        android:layout_height="35dp"
-        android:layout_alignBottom="@+id/View"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="129dp"
-        android:layout_marginEnd="129dp"
-        android:layout_marginBottom="11dp"
-        android:background="#0000"
-        android:onClick="playMp3"
-        android:scaleType="centerInside"
-        android:src="@drawable/zvuk" />
-
     <TextView
         android:id="@+id/message_input"
+        style="@style/text"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:background="#43A30C"
@@ -134,7 +115,7 @@
         android:gravity="center_vertical"
         android:paddingLeft="60dp"
         android:textColor="@android:color/white"
-        android:textSize="18dp" />
+        android:textSize="28sp" />
 
     <ImageButton
         android:id="@+id/backBtn"

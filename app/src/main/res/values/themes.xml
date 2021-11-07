@@ -10,10 +10,29 @@
     </style>
 
     <style name="letter">
-        <item name="android:textColor">#7588A9</item>
-        <item name="android:textSize">45sp</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">@drawable/stroke</item>
+    </style>
+
+    <style name="textLetter">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:onClick">openLetter</item>
+    </style>
+
+    <style name="text">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">@font/calibri_bold</item>
         <item name="android:textAllCaps">false</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">5</item>
     </style>
 
 </resources>

@@ -5,27 +5,34 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import ru.uksivt.berlegen.MainActivity;
 import ru.uksivt.berlegen.R;
+import ru.uksivt.berlegen.RndBackground;
 
 
 public class Course extends AppCompatActivity implements View.OnClickListener {
 
-
+    @SuppressLint("UseCompatLoadingForDrawables")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kurs);
 
+        ImageView main = findViewById(R.id.background);
+        main.setImageDrawable(getResources().getDrawable(
+                getResources().getIdentifier(RndBackground.random(),"drawable",this.getPackageName())
+        ));
+
         findViewById(R.id.backBtn).setOnClickListener(this);
 
-        findViewById(R.id.number).setOnClickListener(this);
-        findViewById(R.id.animals).setOnClickListener(this);
-        findViewById(R.id.food).setOnClickListener(this);
-        findViewById(R.id.profession).setOnClickListener(this);
+        findViewById(R.id.imageNumber).setOnClickListener(this);
+        findViewById(R.id.imageAnimals).setOnClickListener(this);
+        findViewById(R.id.imageFood).setOnClickListener(this);
+        findViewById(R.id.imageProf).setOnClickListener(this);
     }
     @SuppressLint("NonConstantResourceId")
     @Override
@@ -37,27 +44,25 @@ public class Course extends AppCompatActivity implements View.OnClickListener {
 
         Intent intent = new Intent(this, CourseCard.class);
         switch (view.getId()){
-            case R.id.number:
+            case R.id.imageNumber:
                 intent.putExtra("srcru","ruNumber");
                 intent.putExtra("srcbash","bachNumber");
                 intent.putExtra("title","Числа");
                 break;
-            case R.id.animals:
+            case R.id.imageAnimals:
                 intent.putExtra("srcru","ruAnimals");
                 intent.putExtra("srcbash","bachAnimals");
                 intent.putExtra("title","Животные");
                 break;
-            case R.id.food:
+            case R.id.imageFood:
                 intent.putExtra("srcru","ruFood");
                 intent.putExtra("srcbash","bachFood");
                 intent.putExtra("title","Еда");
                 break;
-            case R.id.profession:
+            case R.id.imageProf:
                 intent.putExtra("srcru","ruProfession");
                 intent.putExtra("srcbash","bachProfession");
                 intent.putExtra("title","Профессии");
-                break;
-            default:
                 break;
         }
         startActivity(intent);

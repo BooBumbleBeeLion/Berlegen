@@ -4,17 +4,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:id="@+id/RelativeLayout"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
 
     <ImageView
-        android:id="@+id/icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#fa2255"
-        android:scaleType="centerCrop"
-        android:src="@drawable/background1" />
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
 
     <TextView
         android:id="@+id/message_input"
@@ -23,10 +20,11 @@
         android:background="#43A30C"
         android:clickable="false"
         android:gravity="center_vertical"
-        android:text="Игровая команата"
         android:paddingLeft="60dp"
+        android:text="Игровая команата"
         android:textColor="@android:color/white"
-        android:textSize="18dp" />
+        android:textSize="26sp"
+        style="@style/text"/>
 
     <ImageButton
         android:id="@+id/Button_back"

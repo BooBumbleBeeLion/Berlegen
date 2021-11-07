@@ -1,5 +1,6 @@
 package ru.uksivt.berlegen.Courses;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import ru.uksivt.berlegen.R;
+import ru.uksivt.berlegen.RndBackground;
 
 public class CourseCard extends AppCompatActivity {
 
@@ -23,10 +25,16 @@ public class CourseCard extends AppCompatActivity {
     Button next;
     ImageView iv;
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kurs2);
+
+        ImageView main = findViewById(R.id.background);
+        main.setImageDrawable(getResources().getDrawable(
+                getResources().getIdentifier(RndBackground.random(),"drawable",this.getPackageName())
+        ));
 
         TextView mi = findViewById(R.id.message_input);
         TextView textRu = findViewById(R.id.textru);
