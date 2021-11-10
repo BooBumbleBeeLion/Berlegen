@@ -21,11 +21,6 @@ public class GameImages extends AppCompatActivity implements View.OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gameimages);
 
-        ImageView main = findViewById(R.id.background);
-        main.setImageDrawable(getResources().getDrawable(
-                getResources().getIdentifier(RndBackground.random(),"drawable",this.getPackageName())
-        ));
-
         findViewById(R.id.backBtn).setOnClickListener(this);
         findViewById(R.id.imagePribori).setOnClickListener(this);
         findViewById(R.id.imageSemya).setOnClickListener(this);

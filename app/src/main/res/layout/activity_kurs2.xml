@@ -8,9 +8,10 @@
 
     <ImageView
         android:id="@+id/background"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/fon10" />
 
     <ImageView
         android:id="@+id/letterCard"
@@ -44,7 +45,7 @@
         android:id="@+id/textbash"
         style="@style/text"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_height="45dp"
         android:layout_below="@id/imageWord"
         android:layout_alignStart="@id/imageWord"
         android:layout_alignEnd="@id/imageWord"
@@ -52,11 +53,11 @@
         android:layout_marginTop="-14dp"
         android:layout_marginEnd="-14dp"
         android:background="@drawable/stroke3"
-        android:padding="2dp"
         android:text="word"
         android:textAlignment="center"
         android:textColor="#ffffff"
-        android:textSize="24sp" />
+        android:textSize="35sp"
+        android:padding="2dp"/>
 
     <TextView
         android:id="@+id/textru"
@@ -64,14 +65,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/message_input"
-        android:layout_alignStart="@id/imageWord"
-        android:layout_alignEnd="@id/imageWord"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
         android:padding="2dp"
         android:text="TextView"
         android:textAlignment="center"
         android:textColor="#fff"
-        android:textSize="23sp" />
+        android:textSize="45sp" />
 
     <RelativeLayout
         android:id="@+id/play"
@@ -95,15 +95,18 @@
 
     <Button
         android:id="@+id/Button_next"
-        android:layout_width="143dp"
-        android:layout_height="wrap_content"
+        style="@style/text"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
         android:background="@drawable/stroke"
         android:onClick="next"
-        android:text="Следующее" />
+        android:text="Следующее"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:paddingBottom="5dp"/>
 
     <TextView
         android:id="@+id/message_input"

@@ -31,11 +31,6 @@ public class CourseCard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kurs2);
 
-        ImageView main = findViewById(R.id.background);
-        main.setImageDrawable(getResources().getDrawable(
-                getResources().getIdentifier(RndBackground.random(),"drawable",this.getPackageName())
-        ));
-
         TextView mi = findViewById(R.id.message_input);
         TextView textRu = findViewById(R.id.textru);
         TextView textBash = findViewById(R.id.textbash);

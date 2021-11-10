@@ -22,11 +22,6 @@ public class Course extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kurs);
 
-        ImageView main = findViewById(R.id.background);
-        main.setImageDrawable(getResources().getDrawable(
-                getResources().getIdentifier(RndBackground.random(),"drawable",this.getPackageName())
-        ));
-
         findViewById(R.id.backBtn).setOnClickListener(this);
 
         findViewById(R.id.imageNumber).setOnClickListener(this);

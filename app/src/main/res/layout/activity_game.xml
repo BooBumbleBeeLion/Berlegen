@@ -7,18 +7,19 @@
 
     <ImageView
         android:id="@+id/background"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/fon8" />
 
     <RelativeLayout
         android:id="@+id/GameImages"
-        android:layout_width="match_parent"
-        android:layout_height="230dp"
+        android:layout_width="300dp"
+        android:layout_height="244dp"
         android:layout_below="@+id/message_input"
         android:layout_marginEnd="60dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/foodstroke">
 
         <ImageView
@@ -28,7 +29,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
-            android:background="@android:color/transparent" />
+            android:background="@drawable/gameimageimg" />
 
     </RelativeLayout>
 
@@ -44,7 +45,7 @@
         android:layout_marginEnd="-15dp"
         android:background="@drawable/foodstroke90"
         android:padding="5dp"
-        android:text="Найди кого-то или что-то и узнай как это звучит"
+        android:text="Найди кого-то или что-то\nи узнай, как это звучит"
         android:textAlignment="center"
         android:textColor="#ffffff"
         android:textSize="24sp"
@@ -53,12 +54,12 @@
 
     <RelativeLayout
         android:id="@+id/GameWord"
-        android:layout_width="match_parent"
-        android:layout_height="230dp"
+        android:layout_width="300dp"
+        android:layout_height="244dp"
         android:layout_below="@+id/number"
         android:layout_marginEnd="60dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/numberstroke">
 
         <ImageView

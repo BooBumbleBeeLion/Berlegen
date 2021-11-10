@@ -23,11 +23,6 @@ public class Game extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
-        ImageView main = findViewById(R.id.background);
-        main.setImageDrawable(getResources().getDrawable(
-                getResources().getIdentifier(RndBackground.random(),"drawable",this.getPackageName())
-        ));
-
         findViewById(R.id.backBtn).setOnClickListener(this);
         findViewById(R.id.GameImages).setOnClickListener(this);
         findViewById(R.id.GameWord).setOnClickListener(this);

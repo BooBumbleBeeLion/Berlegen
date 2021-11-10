@@ -8,6 +8,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -31,8 +32,8 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
     Button[] from;
     Button[] arrOfBtns;
     int CurrentLetter = 0;
-    char[] alph = new char[]{'А','Б','В','Г','Ғ','Д','Ҙ','Е','Ё','Ж','З','И','Й','К','Ҡ','Л','М',
-            'Н','Ң','О','Ө','П','Р','С','Ҫ','Т','У','Ү','Ф','Х','Һ','Ц','Ч','Ш','Щ','Ъ','Ы','Ь','Э','Ә','Ю','Я'};
+    char[] alph = new char[]{ 'А','а','Б','б','В','в','Г','г','Ғ','ғ','Д','д','Ҙ','ҙ','Е','е','Ё','ё','Ж','ж','З','з','И','и','Й','й','К','к','Ҡ','ҡ','Л','л','М','м',
+            'Н','н','Ң','ң','О','о','Ө','ө','П','п','Р','р','С','с','Ҫ','ҫ','Т','т','У','у','Ү','ү','Ф','ф','Х','х','Һ','һ','Ц','ц','Ч','ч','Ш','ш','Щ','щ','Ъ','ъ','Ы','ы','Ь','ь','Э','э','Ә','ә','Ю','ю','Я','я' };
     Random rand = new Random();
     Dialog dialog;
     ImageView IV;
@@ -88,6 +89,7 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
         String lword2 = "letterwordbash"+w;
         int holder2 = getResources().getIdentifier(lword2,"string",this.getPackageName());
         word = getResources().getString(holder2);
+        Log.d("WORDDD", word);
         from = new Button[word.length()];
         arrOfBtns = new Button[word.length()];
         int holder4 = getResources().getIdentifier("a"+w,"drawable",this.getPackageName());
@@ -154,21 +156,25 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
 
 
         for(int i =0; i< 6;i++) {
-            float density = getApplicationContext().getResources().getDisplayMetrics().density;
-            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams((int) (density * 50), (int) (density * 50));
-            Button btn = new Button(getApplicationContext());
-            layoutParams.leftMargin = (int)density *10;
-            btn.setId(i+10);
-            btn.setOnClickListener(this);
-            btn.setLayoutParams(layoutParams);
-            btn.setText(String.valueOf(alph[arr[i]]));
+            try {
+                float density = getApplicationContext().getResources().getDisplayMetrics().density;
+                LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams((int) (density * 50), (int) (density * 50));
+                Button btn = new Button(getApplicationContext());
+                layoutParams.leftMargin = (int)density *10;
+                btn.setId(i+10);
+                btn.setOnClickListener(this);
+                btn.setLayoutParams(layoutParams);
+                btn.setText(String.valueOf(alph[arr[i]]));
 
-            btn.setBackground(getResources().getDrawable(R.drawable.custom_button));
+                btn.setBackground(getResources().getDrawable(R.drawable.custom_button));
 
-            btn.setTextColor(Color.WHITE);
+                btn.setTextColor(Color.WHITE);
 
-            LinearLayout buttonlayout = findViewById(R.id.buttonlayout);
-            buttonlayout.addView(btn);
+                LinearLayout buttonlayout = findViewById(R.id.buttonlayout);
+                buttonlayout.addView(btn);
+            } catch (Exception e){
+                Log.d("ERROR WORD",word);
+            }
         }
 
         for(int i = 6; i< 12;i++)
