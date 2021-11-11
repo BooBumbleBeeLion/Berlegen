@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Berlegen</string>
+    <string name="app_name">Я изучаю башкирский язык</string>
 
     <string name="slovo1">ЗДРАВСТВУЙТЕ</string>
     <string name="slovo2">ПРИВЕТ</string>
@@ -37,7 +37,7 @@
     <string name="letterword13">Груз</string>
     <string name="letterword14">Книга</string>
     <string name="letterword15">Берёза</string>
-    <string name="letterword16">Илистое место</string>
+    <string name="letterword16">Ил, Илистое место</string>
     <string name="letterword17">Школа</string>
     <string name="letterword18">Основа, Фудамент</string>
     <string name="letterword19">Нора</string>
@@ -54,12 +54,12 @@
     <string name="letterword30">Животное</string>
     <string name="letterword31">Корова</string>
     <string name="letterword32">Циркуль</string>
-    <string name="letterword33">Чек или Чемпион</string>
+    <string name="letterword33">Чек</string>
     <string name="letterword34">Налим</string>
-    <string name="letterword35">Щука</string>
+    <string name="letterword35">Щи</string>
     <string name="letterword36">Фартук</string>
     <string name="letterword37">Подвода, Обоз</string>
-    <string name="letterword38">Ель</string>
+    <string name="letterword38">Задача</string>
     <string name="letterword39">Собака</string>
     <string name="letterword40">Мама</string>
     <string name="letterword41">Дорога</string>
@@ -99,10 +99,10 @@
     <string name="letterwordbash32">Циркуль</string>
     <string name="letterwordbash33">Чек</string>
     <string name="letterwordbash34">Шамбы</string>
-    <string name="letterwordbash35">Щука</string>
+    <string name="letterwordbash35">Щи</string>
     <string name="letterwordbash36">Алъяпҡыс</string>
     <string name="letterwordbash37">Ылау</string>
-    <string name="letterwordbash38">шыршы</string>
+    <string name="letterwordbash38">мәсьәлә</string>
     <string name="letterwordbash39">Эт</string>
     <string name="letterwordbash40">Әсәй</string>
     <string name="letterwordbash41">Юл</string>

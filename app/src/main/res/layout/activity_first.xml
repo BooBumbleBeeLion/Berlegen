@@ -5,7 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".firstActivity"
-    android:background="@android:color/white">
+    android:background="#EBFDFF">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/green"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/fonfirst" />
 
     <ImageView
         android:id="@+id/green"
@@ -22,22 +29,19 @@
         android:layout_marginStart="10dp"
         android:background="@drawable/logo"/>
 
-    <TextView
+    <ImageView
         android:id="@+id/Berlegen"
-        style="@style/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
         android:layout_below="@+id/logo"
         android:layout_centerHorizontal="true"
-        android:text="Berlegen"
-        android:textColor="@android:color/white"
-        android:textSize="60sp" />
+        android:src="@drawable/nameapp"/>
 
     <LinearLayout
         android:id="@+id/linearTexts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="10dp"
         android:layout_below="@+id/Berlegen"
         android:orientation="vertical">
 
@@ -48,8 +52,7 @@
             android:text="Изучать"
             android:textAlignment="center"
             android:textColor="#777777"
-            android:textSize="40sp"
-            />
+            android:textSize="40sp" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

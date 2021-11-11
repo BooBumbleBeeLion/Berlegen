@@ -1,39 +1,40 @@
 package ru.uksivt.berlegen.Games;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Point;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.DisplayMetrics;
+import android.util.Log;
+import android.view.Display;
 import android.view.View;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import ru.uksivt.berlegen.R;
+import ru.uksivt.berlegen.RndBackground;
 
 public class GameImagesTheme extends AppCompatActivity implements View.OnClickListener {
 
-    private boolean isImageScaled = false;
+    boolean isImageScaled = false;
     boolean playing = true, nowPlay = false;
     int rawBash = 0, rawRus = 0, countBash = 0, countRus = 0;
     int[] sounds;
     int index;
     MediaPlayer mediaPlayer = new MediaPlayer();
+    long duration = 700;
+    long delay = 2000;
+    Context context;
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         switch (getIntent().getStringExtra("title")) {
-            case "pribori":
-                setContentView(R.layout.activity_gipribori);
-                findViewById(R.id.fork).setOnClickListener(this);
-                findViewById(R.id.spoon).setOnClickListener(this);
-                findViewById(R.id.plate).setOnClickListener(this);
-                findViewById(R.id.cup).setOnClickListener(this);
-                findViewById(R.id.knife).setOnClickListener(this);
-                findViewById(R.id.pot).setOnClickListener(this);
-                findViewById(R.id.skillet).setOnClickListener(this);
-                break;
             case "semya":
                 setContentView(R.layout.activity_gisemya);
                 findViewById(R.id.father).setOnClickListener(this);
@@ -57,6 +58,40 @@ public class GameImagesTheme extends AppCompatActivity implements View.OnClickLi
                 findViewById(R.id.goat).setOnClickListener(this);
                 findViewById(R.id.chicken).setOnClickListener(this);
                 findViewById(R.id.goose).setOnClickListener(this);
+                findViewById(R.id.induk).setOnClickListener(this);
+                break;
+            case "pribori":
+                setContentView(R.layout.activity_gipribori);
+                context = this.getApplicationContext();
+                findViewById(R.id.fork).setOnClickListener(this);
+                findViewById(R.id.spoon).setOnClickListener(this);
+                findViewById(R.id.plate).setOnClickListener(this);
+                findViewById(R.id.cup).setOnClickListener(this);
+                findViewById(R.id.knife).setOnClickListener(this);
+                findViewById(R.id.pot).setOnClickListener(this);
+                findViewById(R.id.skillet).setOnClickListener(this);
+                findViewById(R.id.stul).setOnClickListener(this);
+                findViewById(R.id.polotence).setOnClickListener(this);
+                findViewById(R.id.skalka).setOnClickListener(this);
+                findViewById(R.id.polovnik).setOnClickListener(this);
+
+                DisplayMetrics metrics = context.getResources().getDisplayMetrics();
+                float ratio = ((float)metrics.heightPixels / (float)metrics.widthPixels);
+                Log.d("SCREEN_RATIO", ratio + " | " + metrics.heightPixels + " | " + metrics.widthPixels);
+
+                String screenStr = "";
+
+                if(ratio > 1.95)
+                    Log.d("SCREEN","больше 1.95");
+                else if(ratio > 1.8)
+                    Log.d("SCREEN","больше 1.8");
+
+                // TODO: Сделать так чтобы фон ставился в соответствии с соотношением сторон экрана
+
+//                ImageView background = findViewById(R.id.icon);
+//                background.setImageDrawable(getResources().getDrawable(
+//                        getResources().getIdentifier("fonpribori" + screenStr,"drawable",this.getPackageName())
+//                ));
                 break;
         }
         findViewById(R.id.backBtn).setOnClickListener(this);
@@ -66,18 +101,6 @@ public class GameImagesTheme extends AppCompatActivity implements View.OnClickLi
     @Override
     public void onClick(View v) {
         if (!isImageScaled && !nowPlay) {
-            isImageScaled = true;
-            v.animate().scaleX(1.4f).scaleY(1.4f).setDuration(500);
-
-            //задержка для анимации
-            Handler handler = new Handler();
-            handler.postDelayed(new Runnable() {
-                public void run() {
-                    v.animate().scaleX(1f).scaleY(1f).setDuration(500);
-                    isImageScaled = false;
-                }
-            }, 2000);
-
             switch (v.getId()) {
                 // Картинки Приборов
                 case R.id.fork:
@@ -108,6 +131,22 @@ public class GameImagesTheme extends AppCompatActivity implements View.OnClickLi
                     countBash = 7;
                     countRus = 7;
                     break;
+                case R.id.stul:
+                    countBash = 24;
+                    countRus = 24;
+                    break;
+                case R.id.polotence:
+                    countBash = 25;
+                    countRus = 25;
+                    break;
+                case R.id.skalka:
+                    countBash = 26;
+                    countRus = 26;
+                    break;
+                case R.id.polovnik:
+                    countBash = 27;
+                    countRus = 27;
+                    break;
                 // Картинки Семьи
                 case R.id.father:
                     countBash = 8;
@@ -128,10 +167,12 @@ public class GameImagesTheme extends AppCompatActivity implements View.OnClickLi
                 case R.id.smallSister:
                     countBash = 12;
                     countRus = 12;
+                    delay = 4500;
                     break;
                 case R.id.smallBro:
                     countBash = 13;
                     countRus = 13;
+                    delay = 5000;
                     break;
                 // Картинки Зверей
                 case R.id.dog:
@@ -171,15 +212,33 @@ public class GameImagesTheme extends AppCompatActivity implements View.OnClickLi
                     countBash = 22;
                     countRus = 22;
                     break;
+                case R.id.induk:
+                    countBash = 23;
+                    countRus = 23;
+                    break;
 
                 case R.id.backBtn:
                     startActivity(new Intent(this, GameImages.class));
                     return;
             }
+            isImageScaled = true;
+            v.animate().scaleX(1.4f).scaleY(1.4f).setDuration(duration);
+
+            //задержка для анимации
+            Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                public void run() {
+                    v.animate().scaleX(1f).scaleY(1f).setDuration(duration);
+                    isImageScaled = false;
+                }
+            }, delay);
+
             rawBash = getResources().getIdentifier("gameimgbash" + countBash, "raw", this.getPackageName());
             rawRus = getResources().getIdentifier("gameimgrus" + countRus, "raw", this.getPackageName());
             sounds = new int[]{rawBash, rawRus};
             playMp3();
+            duration = 700;
+            delay = 2000;
         }
     }
 

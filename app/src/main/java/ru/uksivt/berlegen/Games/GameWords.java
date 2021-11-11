@@ -2,6 +2,7 @@ package ru.uksivt.berlegen.Games;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -18,6 +19,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.view.ContextThemeWrapper;
 
 import java.util.Random;
 
@@ -64,6 +66,9 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gamewords);
+
+        Context context = getApplicationContext();
+        final Context contextThemeTextWrapper = new ContextThemeWrapper(context, R.style.textGameWord);
 
         ImageView main = findViewById(R.id.background);
         main.setImageDrawable(getResources().getDrawable(
@@ -159,12 +164,13 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
             try {
                 float density = getApplicationContext().getResources().getDisplayMetrics().density;
                 LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams((int) (density * 50), (int) (density * 50));
-                Button btn = new Button(getApplicationContext());
+                Button btn = new Button(contextThemeTextWrapper);
                 layoutParams.leftMargin = (int)density *10;
                 btn.setId(i+10);
                 btn.setOnClickListener(this);
                 btn.setLayoutParams(layoutParams);
                 btn.setText(String.valueOf(alph[arr[i]]));
+                btn.setTextSize(20f);
 
                 btn.setBackground(getResources().getDrawable(R.drawable.custom_button));
 
@@ -181,12 +187,13 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
         {
             float density = getApplicationContext().getResources().getDisplayMetrics().density;
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams((int) (density * 50), (int) (density * 50));
-            Button btn = new Button(getApplicationContext());
+            Button btn = new Button(contextThemeTextWrapper);
             layoutParams.leftMargin = (int)density *10;
             btn.setId(i+20);
             btn.setOnClickListener(this);
             btn.setLayoutParams(layoutParams);
             btn.setText(String.valueOf(alph[arr[i]]));
+            btn.setTextSize(20f);
 
             btn.setBackground(getResources().getDrawable(R.drawable.custom_button));
             btn.setTextColor(Color.WHITE);
@@ -203,12 +210,13 @@ public class GameWords extends AppCompatActivity implements View.OnClickListener
             {
                 layoutParams = new LinearLayout.LayoutParams((int) (density * 40), (int) (density * 40));
             }
-            Button btn = new Button(getApplicationContext());
+            Button btn = new Button(contextThemeTextWrapper);
             layoutParams.leftMargin = (int)density *10;
             btn.setId(i);
             btn.setOnClickListener(this);
             btn.setLayoutParams(layoutParams);
             btn.setText("");
+            btn.setTextSize(20f);
 
             btn.setBackground(getResources().getDrawable(R.drawable.custom_button));
             btn.setTextColor(Color.rgb(233,240,192));

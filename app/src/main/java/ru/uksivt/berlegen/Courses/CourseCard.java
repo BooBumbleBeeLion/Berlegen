@@ -128,7 +128,6 @@ public class CourseCard extends AppCompatActivity {
                 }
                 sounds = new int[]{holderInt, holderInt2};
             }
-
         }
         else {
             playing = false;
@@ -137,8 +136,7 @@ public class CourseCard extends AppCompatActivity {
         }
     }
 
-    public void playMp3(View view)
-    {
+    public void playMp3(View view) {
         if(!nowPlay) {
             nowPlay = true;
             index = 0;
@@ -155,7 +153,8 @@ public class CourseCard extends AppCompatActivity {
                     }
                     else {
                         mp.release();
-                        nowPlay =false;}
+                        nowPlay =false;
+                    }
                 }
             });
         }
