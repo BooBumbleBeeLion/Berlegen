@@ -51,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="75dp"
         android:gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/imageView"
         android:orientation="horizontal"/>
@@ -61,7 +61,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="60dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -69,7 +69,6 @@
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:orientation="horizontal">
-
 
         </LinearLayout>
 
@@ -79,8 +78,6 @@
             android:layout_height="55dp"
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
-
-
         </LinearLayout>
     </LinearLayout>
 

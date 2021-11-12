@@ -23,11 +23,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageView main = findViewById(R.id.background);
-        main.setImageDrawable(getResources().getDrawable(
-                getResources().getIdentifier(RndBackground.random(),"drawable",this.getPackageName())
-        ));
-
         findViewById(R.id.alphabet).setOnClickListener(this);
         findViewById(R.id.course).setOnClickListener(this);
         findViewById(R.id.game).setOnClickListener(this);

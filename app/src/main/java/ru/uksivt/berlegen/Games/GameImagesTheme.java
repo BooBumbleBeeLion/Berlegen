@@ -74,24 +74,6 @@ public class GameImagesTheme extends AppCompatActivity implements View.OnClickLi
                 findViewById(R.id.polotence).setOnClickListener(this);
                 findViewById(R.id.skalka).setOnClickListener(this);
                 findViewById(R.id.polovnik).setOnClickListener(this);
-
-                DisplayMetrics metrics = context.getResources().getDisplayMetrics();
-                float ratio = ((float)metrics.heightPixels / (float)metrics.widthPixels);
-                Log.d("SCREEN_RATIO", ratio + " | " + metrics.heightPixels + " | " + metrics.widthPixels);
-
-                String screenStr = "";
-
-                if(ratio > 1.95)
-                    Log.d("SCREEN","больше 1.95");
-                else if(ratio > 1.8)
-                    Log.d("SCREEN","больше 1.8");
-
-                // TODO: Сделать так чтобы фон ставился в соответствии с соотношением сторон экрана
-
-//                ImageView background = findViewById(R.id.icon);
-//                background.setImageDrawable(getResources().getDrawable(
-//                        getResources().getIdentifier("fonpribori" + screenStr,"drawable",this.getPackageName())
-//                ));
                 break;
         }
         findViewById(R.id.backBtn).setOnClickListener(this);

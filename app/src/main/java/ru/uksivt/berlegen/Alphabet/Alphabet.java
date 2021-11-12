@@ -25,11 +25,6 @@ public class Alphabet extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alphabet);
-
-        ImageView main = findViewById(R.id.background);
-        main.setImageDrawable(getResources().getDrawable(
-                getResources().getIdentifier(RndBackground.random(),"drawable",this.getPackageName())
-        ));
     }
 
     public void openLetter(View view) {
