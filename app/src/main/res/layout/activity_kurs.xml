@@ -14,164 +14,186 @@
         app:srcCompat="@drawable/fon5" />
 
     <RelativeLayout
-        android:id="@+id/imageNumber"
-        android:layout_width="170dp"
-        android:layout_height="140dp"
-        android:layout_below="@+id/message_input"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/numberstroke">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/message_input">
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
 
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="15dp"
-            android:scaleType="centerInside"
-            android:background="@drawable/numberimg" />
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/imageNumber"
+                    android:layout_width="170dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/numberstroke">
 
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/numberimg"
+                        android:scaleType="centerInside" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/imageNumber"
+                    android:layout_alignStart="@id/imageNumber"
+                    android:layout_alignEnd="@id/imageNumber"
+                    android:layout_marginStart="-10dp"
+                    android:layout_marginTop="-14dp"
+                    android:layout_marginEnd="-10dp"
+                    android:background="@drawable/numberstroke90"
+                    android:text="Цифры"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    style="@style/text"/>
+
+                <RelativeLayout
+                    android:id="@+id/imageFood"
+                    android:layout_width="170dp"
+                    android:layout_height="140dp"
+                    android:layout_below="@+id/number"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/foodstroke">
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="105dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/foodimg" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/imageFood"
+                    android:layout_alignStart="@id/imageFood"
+                    android:layout_alignEnd="@id/imageFood"
+                    android:layout_marginStart="-10dp"
+                    android:layout_marginTop="-14dp"
+                    android:layout_marginEnd="-10dp"
+                    android:background="@drawable/foodstroke90"
+                    android:text="Еда"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    style="@style/text"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/relative">
+
+                <RelativeLayout
+                    android:id="@+id/imageAnimals"
+                    android:layout_width="170dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/animalstroke">
+
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/animalsimg" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/animals"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/imageAnimals"
+                    android:layout_alignStart="@id/imageAnimals"
+                    android:layout_alignEnd="@id/imageAnimals"
+                    android:layout_marginStart="-10dp"
+                    android:layout_marginTop="-14dp"
+                    android:layout_marginEnd="-10dp"
+                    android:background="@drawable/animalstroke90"
+                    android:gravity="center"
+                    android:text="Животные"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp" />
+
+
+
+                <RelativeLayout
+                    android:id="@+id/imageProf"
+                    android:layout_width="170dp"
+                    android:layout_height="140dp"
+                    android:layout_below="@+id/animals"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/profstroke">
+
+                    <ImageView
+                        android:layout_width="114dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/profimg" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/prof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/imageProf"
+                    android:layout_alignStart="@id/imageProf"
+                    android:layout_alignEnd="@id/imageProf"
+                    android:layout_marginStart="-10dp"
+                    android:layout_marginTop="-14dp"
+                    android:layout_marginEnd="-10dp"
+                    android:background="@drawable/profstroke90"
+                    android:text="Профессии"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    style="@style/text"/>
+            </RelativeLayout>
+        </RelativeLayout>
     </RelativeLayout>
-
-    <TextView
-        android:id="@+id/number"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_below="@id/imageNumber"
-        android:layout_alignStart="@id/imageNumber"
-        android:layout_alignEnd="@id/imageNumber"
-        android:layout_marginStart="-10dp"
-        android:layout_marginTop="-14dp"
-        android:layout_marginEnd="-10dp"
-        android:background="@drawable/numberstroke90"
-        android:text="Цифры"
-        android:textAlignment="center"
-        android:textColor="#ffffff"
-        android:textSize="24sp"
-        android:gravity="center"
-        style="@style/text"/>
-
-    <RelativeLayout
-        android:id="@+id/imageAnimals"
-        android:layout_width="170dp"
-        android:layout_height="140dp"
-        android:layout_below="@+id/message_input"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="15dp"
-        android:background="@drawable/animalstroke">
-
-        <ImageView
-            android:layout_width="125dp"
-            android:layout_height="120dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"
-            android:scaleType="centerInside"
-            android:background="@drawable/animalsimg" />
-
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/animals"
-        style="@style/text"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_below="@id/imageAnimals"
-        android:layout_alignStart="@id/imageAnimals"
-        android:layout_alignEnd="@id/imageAnimals"
-        android:layout_marginStart="-10dp"
-        android:layout_marginTop="-14dp"
-        android:layout_marginEnd="-10dp"
-        android:background="@drawable/animalstroke90"
-        android:gravity="center"
-        android:text="Животные"
-        android:textColor="#ffffff"
-        android:textSize="24sp" />
-
-    <RelativeLayout
-        android:id="@+id/imageFood"
-        android:layout_width="170dp"
-        android:layout_height="140dp"
-        android:layout_below="@+id/number"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/foodstroke">
-
-        <ImageView
-            android:layout_width="130dp"
-            android:layout_height="105dp"
-            android:layout_marginTop="5dp"
-            android:layout_centerHorizontal="true"
-            android:scaleType="centerInside"
-            android:background="@drawable/foodimg" />
-
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/food"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_below="@id/imageFood"
-        android:layout_alignStart="@id/imageFood"
-        android:layout_alignEnd="@id/imageFood"
-        android:layout_marginStart="-10dp"
-        android:layout_marginTop="-14dp"
-        android:layout_marginEnd="-10dp"
-        android:background="@drawable/foodstroke90"
-        android:text="Еда"
-        android:textAlignment="center"
-        android:textColor="#ffffff"
-        android:textSize="24sp"
-        android:gravity="center"
-        style="@style/text"/>
-
-    <RelativeLayout
-        android:id="@+id/imageProf"
-        android:layout_width="170dp"
-        android:layout_height="140dp"
-        android:layout_below="@+id/animals"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="15dp"
-        android:layout_alignParentEnd="true"
-        android:background="@drawable/profstroke">
-
-        <ImageView
-            android:layout_width="114dp"
-            android:layout_height="120dp"
-            android:layout_marginTop="5dp"
-            android:layout_centerHorizontal="true"
-            android:scaleType="centerInside"
-            android:background="@drawable/profimg" />
-
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/prof"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_below="@id/imageProf"
-        android:layout_alignStart="@id/imageProf"
-        android:layout_alignEnd="@id/imageProf"
-        android:layout_marginStart="-10dp"
-        android:layout_marginTop="-14dp"
-        android:layout_marginEnd="-10dp"
-        android:background="@drawable/profstroke90"
-        android:text="Профессии"
-        android:textAlignment="center"
-        android:textColor="#ffffff"
-        android:textSize="24sp"
-        android:gravity="center"
-        style="@style/text"/>
 
     <TextView
         android:id="@+id/message_input"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:background="#43A30C"
-        android:clickable="false"
         android:gravity="center_vertical"
         android:paddingLeft="60dp"
         android:text="Курс"

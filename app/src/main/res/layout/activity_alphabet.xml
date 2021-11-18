@@ -35,535 +35,539 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal">
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l1"
-                            android:background="@drawable/l1"
-                            android:text="Аа"
-                            style="@style/textLetter"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l1"
+                                android:background="@drawable/l1"
+                                android:text="Аа"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l2"
+                                android:background="@drawable/l2"
+                                android:text="Бб"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l3"
+                                android:background="@drawable/l3"
+                                android:text="Вв"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l2"
-                            android:background="@drawable/l2"
-                            android:text="Бб"
-                            style="@style/textLetter"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l4"
+                                android:background="@drawable/l4"
+                                android:text="Гг"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l5"
+                                android:background="@drawable/l5"
+                                android:text="Ғғ"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l6"
+                                android:background="@drawable/l6"
+                                android:text="Дд"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
                     </LinearLayout>
 
                     <LinearLayout
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l3"
-                            android:background="@drawable/l3"
-                            android:text="Вв"
-                            style="@style/textLetter"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l7"
+                                android:background="@drawable/l7"
+                                android:text="Ҙҙ"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l8"
+                                android:background="@drawable/l8"
+                                android:text="Ее"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l9"
+                                android:background="@drawable/l9"
+                                android:text="Ёё"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l10"
+                                android:background="@drawable/l10"
+                                android:text="Жж"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l11"
+                                android:background="@drawable/l11"
+                                android:text="Зз"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l12"
+                                android:background="@drawable/l12"
+                                android:text="Ии"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l13"
+                                android:background="@drawable/l13"
+                                android:text="Йй"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l14"
+                                android:background="@drawable/l14"
+                                android:text="Кк"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l15"
+                                android:background="@drawable/l15"
+                                android:text="Ҡҡ"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l16"
+                                android:background="@drawable/l16"
+                                android:text="Лл"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l17"
+                                android:background="@drawable/l17"
+                                android:text="Мм"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l18"
+                                android:background="@drawable/l18"
+                                android:text="Нн"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l19"
+                                android:background="@drawable/l19"
+                                android:text="Ңң"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l20"
+                                android:background="@drawable/l20"
+                                android:text="Оо"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l21"
+                                android:background="@drawable/l21"
+                                android:text="Өө"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l22"
+                                android:background="@drawable/l22"
+                                android:text="Пп"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l23"
+                                android:background="@drawable/l23"
+                                android:text="Рр"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l24"
+                                android:background="@drawable/l24"
+                                android:text="Сс"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l25"
+                                android:background="@drawable/l25"
+                                android:text="Ҫҫ"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l26"
+                                android:background="@drawable/l26"
+                                android:text="Тт"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l27"
+                                android:background="@drawable/l27"
+                                android:text="Уу"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l28"
+                                android:background="@drawable/l28"
+                                android:text="Үү"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l29"
+                                android:background="@drawable/l29"
+                                android:text="Фф"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l30"
+                                android:background="@drawable/l30"
+                                android:text="Хх"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l31"
+                                android:background="@drawable/l31"
+                                android:text="Һһ"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l32"
+                                android:background="@drawable/l32"
+                                android:text="Цц"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l33"
+                                android:background="@drawable/l33"
+                                android:text="Чч"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l34"
+                                android:background="@drawable/l34"
+                                android:text="Шш"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l35"
+                                android:background="@drawable/l35"
+                                android:text="Щщ"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l36"
+                                android:background="@drawable/l36"
+                                android:text="Ъъ"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l37"
+                                android:background="@drawable/l37"
+                                android:text="Ыы"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l38"
+                                android:background="@drawable/l38"
+                                android:text="Ьь"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l39"
+                                android:background="@drawable/l39"
+                                android:text="Ээ"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l40"
+                                android:background="@drawable/l40"
+                                android:text="Әә"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginEnd="40dp"
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l41"
+                                android:background="@drawable/l41"
+                                android:text="Юю"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/letter">
+                            <TextView
+                                android:id="@+id/l42"
+                                android:background="@drawable/l42"
+                                android:text="Яя"
+                                style="@style/textLetter"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l4"
-                            android:background="@drawable/l4"
-                            android:text="Гг"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l5"
-                            android:background="@drawable/l5"
-                            android:text="Ғғ"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l6"
-                            android:background="@drawable/l6"
-                            android:text="Дд"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l7"
-                            android:background="@drawable/l7"
-                            android:text="Ҙҙ"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l8"
-                            android:background="@drawable/l8"
-                            android:text="Ее"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l9"
-                            android:background="@drawable/l9"
-                            android:text="Ёё"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l10"
-                            android:background="@drawable/l10"
-                            android:text="Жж"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l11"
-                            android:background="@drawable/l11"
-                            android:text="Зз"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l12"
-                            android:background="@drawable/l12"
-                            android:text="Ии"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l13"
-                            android:background="@drawable/l13"
-                            android:text="Йй"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l14"
-                            android:background="@drawable/l14"
-                            android:text="Кк"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l15"
-                            android:background="@drawable/l15"
-                            android:text="Ҡҡ"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l16"
-                            android:background="@drawable/l16"
-                            android:text="Лл"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l17"
-                            android:background="@drawable/l17"
-                            android:text="Мм"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l18"
-                            android:background="@drawable/l18"
-                            android:text="Нн"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l19"
-                            android:background="@drawable/l19"
-                            android:text="Ңң"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l20"
-                            android:background="@drawable/l20"
-                            android:text="Оо"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l21"
-                            android:background="@drawable/l21"
-                            android:text="Өө"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l22"
-                            android:background="@drawable/l22"
-                            android:text="Пп"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l23"
-                            android:background="@drawable/l23"
-                            android:text="Рр"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l24"
-                            android:background="@drawable/l24"
-                            android:text="Сс"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l25"
-                            android:background="@drawable/l25"
-                            android:text="Ҫҫ"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l26"
-                            android:background="@drawable/l26"
-                            android:text="Тт"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l27"
-                            android:background="@drawable/l27"
-                            android:text="Уу"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l28"
-                            android:background="@drawable/l28"
-                            android:text="Үү"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l29"
-                            android:background="@drawable/l29"
-                            android:text="Фф"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l30"
-                            android:background="@drawable/l30"
-                            android:text="Хх"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l31"
-                            android:background="@drawable/l31"
-                            android:text="Һһ"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l32"
-                            android:background="@drawable/l32"
-                            android:text="Цц"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l33"
-                            android:background="@drawable/l33"
-                            android:text="Чч"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l34"
-                            android:background="@drawable/l34"
-                            android:text="Шш"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l35"
-                            android:background="@drawable/l35"
-                            android:text="Щщ"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l36"
-                            android:background="@drawable/l36"
-                            android:text="Ъъ"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l37"
-                            android:background="@drawable/l37"
-                            android:text="Ыы"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l38"
-                            android:background="@drawable/l38"
-                            android:text="Ьь"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l39"
-                            android:background="@drawable/l39"
-                            android:text="Ээ"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l40"
-                            android:background="@drawable/l40"
-                            android:text="Әә"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginEnd="40dp"
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l41"
-                            android:background="@drawable/l41"
-                            android:text="Юю"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        style="@style/letter">
-                        <TextView
-                            android:id="@+id/l42"
-                            android:background="@drawable/l42"
-                            android:text="Яя"
-                            style="@style/textLetter"/>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </LinearLayout>
+            </RelativeLayout>
 
         </ScrollView>
 

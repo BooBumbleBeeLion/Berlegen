@@ -14,12 +14,21 @@
         android:src="@drawable/fonanimal" />
 
     <ImageView
-        android:id="@+id/dog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/message_input"
-        android:layout_alignBottom="@+id/icon"
+        android:id="@+id/cat"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginBottom="230dp"
+        android:background="#0000"
+        android:src="@drawable/zveri2" />
+
+    <ImageView
+        android:id="@+id/dog"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/icon"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="217dp"
@@ -29,46 +38,25 @@
         android:background="#0000"
         android:src="@drawable/zveri1" />
 
-    <ImageView
-        android:id="@+id/cat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/message_input"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="117dp"
-        android:layout_marginTop="331dp"
-        android:layout_marginEnd="168dp"
-        android:layout_marginBottom="224dp"
-        android:background="#0000"
-        android:src="@drawable/zveri2" />
 
     <ImageView
         android:id="@+id/parrot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
         android:layout_below="@+id/message_input"
-        android:layout_alignBottom="@+id/icon"
-        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="310dp"
-        android:layout_marginTop="151dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="419dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="14dp"
         android:background="#0000"
         android:src="@drawable/zveri3" />
 
     <ImageView
         android:id="@+id/hamster"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/message_input"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_alignBottom="@+id/icon"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="532dp"
-        android:layout_marginEnd="312dp"
         android:layout_marginBottom="82dp"
         android:background="#0000"
         android:src="@drawable/zveri4" />

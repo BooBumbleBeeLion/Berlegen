@@ -14,62 +14,70 @@
         android:layout_alignParentBottom="true"
         android:src="@drawable/fonfirst" />
 
-    <ImageView
+    <RelativeLayout
         android:id="@+id/green"
         android:layout_width="match_parent"
-        android:layout_height="440dp"
-        android:background="@drawable/green" />
+        android:layout_height="450dp"
+        android:background="@drawable/green" >
 
-    <ImageView
-        android:id="@+id/logo"
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="384dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo"/>
+
+        <ImageView
+            android:id="@+id/Berlegen"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/nameapp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp"
-        android:background="@drawable/logo"/>
-
-    <ImageView
-        android:id="@+id/Berlegen"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:layout_below="@+id/logo"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/nameapp"/>
-
-    <LinearLayout
-        android:id="@+id/linearTexts"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/Berlegen"
-        android:orientation="vertical">
-
-        <TextView
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button"
+        android:layout_below="@+id/green">
+        <LinearLayout
+            android:id="@+id/linearTexts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/calibri_bold"
-            android:text="Изучать"
-            android:textAlignment="center"
-            android:textColor="#777777"
-            android:textSize="40sp" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Башкирский язык"
-            android:textAlignment="center"
-            android:textColor="#777777"
-            android:textSize="40sp"
-            android:fontFamily="@font/calibri_bold" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Легко и доступно"
-            android:textAlignment="center"
-            android:textColor="#777777"
-            android:textSize="40sp"
-            android:fontFamily="@font/calibri_bold" />
-    </LinearLayout>
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/calibri_bold"
+                android:text="Изучать"
+                android:textAlignment="center"
+                android:textColor="#777777"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/calibri_bold"
+                android:text="Башкирский язык"
+                android:textAlignment="center"
+                android:textColor="#777777"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/calibri_bold"
+                android:text="Легко и доступно"
+                android:textAlignment="center"
+                android:textColor="#777777"
+                android:textSize="40sp" />
+        </LinearLayout>
+    </RelativeLayout>
 
     <Button
         android:id="@+id/button"
